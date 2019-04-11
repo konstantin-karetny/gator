@@ -10,7 +10,7 @@ spl_autoload_register();
 
 die(var_dump(
 
-    Type\Cmd::init('asdfaSF!$*)(&(@&$4g'),
+    Type\Cmd::init('asdfaSF!$*)(&(@&$4g')->res,
 
     Type\Arr::init([
         'val1' => 1,
