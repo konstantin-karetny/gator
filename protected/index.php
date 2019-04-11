@@ -10,12 +10,10 @@ spl_autoload_register();
 
 die(var_dump(
 
-    Type\Cmd::init('asdfaSF!$*)(&(@&$4g')->res(),
-
-    Type\Arr::init([
+    DataSet::init([
         'val1' => 1,
-        'val2' => 2
-    ])
+        'val2' => 'as!@#(**fd'
+    ])->getCmd(Type\Cmd::init('val2'))
 
 ));
 

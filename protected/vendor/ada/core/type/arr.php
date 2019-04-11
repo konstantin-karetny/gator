@@ -18,4 +18,9 @@ class Arr extends Type
     {
         return parent::res();
     }
+
+    public function val(Cmd $key)
+    {
+        return $this->res()[$key->res()];
+    }
 }

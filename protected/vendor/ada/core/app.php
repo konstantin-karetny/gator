@@ -27,7 +27,7 @@ class App extends Proto
 
     public function exec(): bool
     {
-        die(var_dump($this->getConfig()->getCmd(Type\Cmd::init('va&^%)(&#@%jhfsd4asd5fgr'))));
+        die(var_dump(__METHOD__));
     }
 
     public function getInput(): Input
