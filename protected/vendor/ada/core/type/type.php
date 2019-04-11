@@ -1,33 +1,29 @@
 <?php
-    /**
-    * @package   project/core
-    * @version   1.0.0 06.07.2018
-    * @author    author
-    * @copyright copyright
-    * @license   Licensed under the Apache License, Version 2.0
-    */
 
-    namespace Ada\Core\Type;
+namespace Ada\Core\Type;
 
-    abstract class Type extends \Ada\Core\Proto {
+abstract class Type extends \Ada\Core\Proto
+{
+    protected
+        $core;
 
-        protected
-            $subj;
-
-        protected function __construct($subj) {
-            $this->subj = $subj;
-        }
-
-        protected function getSubject() {
-            return $this->subj;
-        }
-
-        public function getInitialValue() {
-            return \Ada\Core\Types::INITIAL_VALUES[$this->getType()];
-        }
-
-        public function getType(): string {
-            return \Ada\Core\Types::get($this->getSubject());
-        }
-
+    public static function init()
+    {
+        return parent::init(...func_get_args());
     }
+
+    public function __construct($core = null)
+    {
+        $this->core = $core;
+    }
+
+    public function res()
+    {
+        return $this->core;
+    }
+
+    public function getName(): Cmd
+    {
+        return Cmd::init(substr(strrchr(get_class($this), '\\'), 1));
+    }
+}
