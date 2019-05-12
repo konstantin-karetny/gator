@@ -1,0 +1,15 @@
+#header {
+    margin-bottom: 50px;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.01);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 250px;
+    margin: 0 auto;
+}
+
+#logo img {
+    max-width: 100%;
+}
