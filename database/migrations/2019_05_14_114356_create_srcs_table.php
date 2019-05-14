@@ -4,18 +4,19 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostsTable extends Migration
+class CreateSrcsTable extends Migration
 {
     public function up()
     {
         Schema::create(
-            'posts',
+            'srcs',
             function (Blueprint $table) {
                 $table->increments('id');
-                $table->integer('src_id');
-                $table->integer('type_id');
-                $table->string('original_id');
+                $table->integer('user_id')->unsigned()->index();
+                $table->string('alias');
                 $table->string('name');
+                $table->string('url');
+                $table->unsignedSmallInteger('filter_min_votes');
                 $table->timestamps();
             }
         );
@@ -23,6 +24,6 @@ class CreatePostsTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('srcs');
     }
 }

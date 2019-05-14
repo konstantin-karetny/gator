@@ -9,8 +9,9 @@ class HarvestItem
        $created_at       = 0,
        $down_votes_count = 0,
        $name             = '',
+       $original_id      = '',
        $raw              = null,
-       $raw_id           = '',
-       $type             = '',
+       $src_id           = 0,
+       $type_id          = 0,
        $up_votes_count   = 0;
 }

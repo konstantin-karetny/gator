@@ -10,4 +10,11 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    protected
+        $alias = '';
+
+    public function __construct() {
+        $this->alias = trim(strtolower(class_basename($this)));
+    }
 }

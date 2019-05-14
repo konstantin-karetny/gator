@@ -9,6 +9,7 @@ class Harvester extends Controller
 {
    public function exec(HarvesterService $service)
    {
+       die(var_dump($service->exec($this->getRaw())));
        $service->exec($this->getRaw());
    }
 

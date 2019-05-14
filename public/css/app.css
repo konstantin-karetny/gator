@@ -13,3 +13,11 @@
 #logo img {
     max-width: 100%;
 }
+
+.btns > * {
+    vertical-align: middle;
+}
+
+.btns .btn:not(:last-child) {
+    margin-right: 5px;
+}

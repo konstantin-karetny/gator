@@ -13,7 +13,7 @@ class Harvester
                 $combine = $this->getCombine($raw->src);
                 $item    = $combine->format($raw);
                 if ($combine->filter($item)) {
-                    //$combine->save($item);
+                    $combine->save($item);
                 }
             } catch (\Exception $e) {
                 // TODO logging

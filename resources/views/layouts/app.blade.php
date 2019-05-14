@@ -11,6 +11,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/app.js') }}"></script>
         @if (file_exists(public_path($js)))

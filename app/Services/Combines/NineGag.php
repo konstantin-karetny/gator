@@ -5,17 +5,24 @@ namespace App\Services\Combines;
 use App\Models\Post as PostModel;
 use App\Services\Combines\Combine;
 use App\Services\HarvestItem;
+use Exception;
+use Validator;
 
 class NineGag extends Combine
 {
-    public function detectType(HarvestItem $item): string
+    public function detectType(HarvestItem $item)
     {
-        switch (strtolower(trim($item->raw->type))) {
+        return (object) ['id' => 0];
+
+        switch (strtolower(trim($item->type))) {
             case 'animated':
                 return 'video';
+            case 'article':
+                return 'text';
             case 'photo':
                 return 'img';
         };
+        throw new Exception('Filed to detect type');
     }
 
     public function filter(HarvestItem $item): bool
@@ -28,20 +35,38 @@ class NineGag extends Combine
 
     public function format($raw): HarvestItem
     {
-       $res                   = new HarvestItem();
-       $res->comments_count   = (int) $raw->commentsCount;
-       $res->created_at       = (int) $raw->creationTs;
-       $res->down_votes_count = (int) $raw->downVoteCount;
-       $res->name             = htmlspecialchars_decode(trim((string) $raw->title, '" \t\n\r\0\x0B".'));
-       $res->raw              = $raw;
-       $res->raw_id           = $raw->id;
-       $res->up_votes_count   = (int) $raw->upVoteCount;
-       $res->type             = $this->detectType($res);
-       return $res;
+        $res                   = new HarvestItem();
+        $validated             = (object) $this->validate((array) $raw);
+        $res->comments_count   = (int) $validated->commentsCount;
+        $res->created_at       = (int) $validated->creationTs;
+        $res->down_votes_count = (int) $validated->downVoteCount;
+        $res->name             = html_entity_decode(htmlspecialchars_decode(trim((string) $validated->title), ENT_QUOTES));
+        $res->original_id      = $validated->id;
+        $res->raw              = $raw;
+        //$res->src_id           = ;
+        $res->type             = $validated->type;
+        $res->up_votes_count   = (int) $validated->upVoteCount;
+        $res->type_id          = $this->detectType($res)->id;
+        return $res;
     }
 
-    public function save(HarvestItem $item): PostModel
+    public function validate(array $data): array
     {
-
+        $validator = Validator::make(
+            $data,
+            [
+                'commentsCount'    => 'required|integer',
+                'creationTs'       => 'required|integer',
+                'downVoteCount'    => 'required|integer',
+                'id'               => 'required|alpha_num',
+                'title'            => 'required|string|min:1|max:255',
+                'type'             => 'required|alpha',
+                'upVoteCount'      => 'required|integer'
+            ]
+        );
+        if ($validator->errors()->all()) {
+            throw new Exception('Filed to format item');
+        }
+        return $validator->validated();
     }
 }

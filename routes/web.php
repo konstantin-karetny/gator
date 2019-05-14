@@ -11,17 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
 Route::get('/', 'Post@items')->name('home');
 
-Route::get('/harvest', 'Harvester@exec');
-Route::get('/harvest-api', 'Harvester@api');
+Route::get('harvester', 'Harvester@exec');
+Route::get('harvester-api', 'Harvester@api');
 
-Route::get('/posts', 'Post@items');
-Route::post('/post', 'Post@store');
-Route::delete('/task/{task}', 'Post@destroy');
+Route::get('posts', 'Post@items');
+Route::post('post', 'Post@store');
+Route::get('post/delete/{ids}', 'Post@delete');
+
+/*Route::get('srcs', 'Src@index');
+Route::get('src/edit/{id}', 'Src@edit');
+Route::post('src/store', 'Src@store');
+Route::get('srcs/delete/{ids}', 'Src@delete');*/
+
+
+Route::resource('src', 'Src');

@@ -2,18 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Models\Post as PostModel;
+use Illuminate\Http\Request;
 
 class Post extends Controller
 {
-    protected $model;
-
-    public function __construct(PostModel $model)
-    {
-        $this->model = $model;
-    }
-
     public function destroy(Request $request, PostModel $task)
     {
         $this->authorize('destroy', $task);
@@ -77,5 +71,6 @@ class Post extends Controller
     update()
     destroy()
     https://habr.com/ru/post/350778
+    https://itsolutionstuff.com/post/laravel-58-crud-create-read-update-delete-tutorial-for-beginnersexample.html
     */
 }
