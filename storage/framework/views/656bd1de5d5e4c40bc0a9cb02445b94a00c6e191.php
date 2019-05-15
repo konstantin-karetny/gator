@@ -27,6 +27,7 @@
     </head>
     <body>
         <?php echo $__env->make('layouts.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php echo $__env->make('layouts.errors', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <?php echo $__env->yieldContent('content'); ?>
     </body>
 </html><?php /**PATH C:\OSPanel\domains\gator\resources\views/layouts/app.blade.php ENDPATH**/ ?>

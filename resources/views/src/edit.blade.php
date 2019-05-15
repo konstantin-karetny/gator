@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
-        <form action="{{ route($branch . '.update', $item->id ?: 0) }}" method="POST">
+        <form action="{{ $item->id ? route($branch . '.update', $item->id) : route($branch . '.store') }}" method="POST">
             <div class="form-group row">
                 <div class="header col-sm">
                     <h1>@lang('app.src') - @lang('app.' . ($item->id ? 'edit' : 'create'))</h1>
@@ -14,13 +14,13 @@
             <div class="form-group row">
                 <label for="name" class="col-sm-2 col-form-label">@lang('app.name')</label>
                 <div class="col-sm-10">
-                  <input class="form-control" id="name">
+                  <input class="form-control" id="name" name="name">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="alias" class="col-sm-2 col-form-label">@lang('app.alias')</label>
                 <div class="col-sm-10">
-                  <input class="form-control" id="alias">
+                  <input class="form-control" id="alias" name="alias">
                 </div>
             </div>
             @csrf

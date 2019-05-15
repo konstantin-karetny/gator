@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Src as SrcModel;
+use App\Requests\SrcStore as SrcStoreRequest;
+use App\Services\Src as SrcService;
 use Illuminate\Http\Request;
 
 class Src extends Controller
@@ -20,11 +22,11 @@ class Src extends Controller
         return $this->edit(new SrcModel());
     }
 
-    public function store(Request $request)
+    public function store(SrcStoreRequest $request)
     {
         $request->validate([
-            'name' => 'required',
-            'detail' => 'required',
+            'name'  => 'required|string|unique:srcs|min:3|max:255',
+            'alias' => 'required|alpha_dash|unique:srcs|min:3|max:255'
         ]);
         SrcModel::create($request->all());
         return redirect()->route($this->alias . '.index')
