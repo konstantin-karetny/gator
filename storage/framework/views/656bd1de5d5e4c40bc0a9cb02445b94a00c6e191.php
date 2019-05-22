@@ -3,6 +3,7 @@
     <head>
         <link href="<?php echo e(asset('favicon.ico')); ?>" rel="shortcut icon" type="image/vnd.microsoft.icon">
         <link href="<?php echo e(asset('css/bootstrap.min.css')); ?>" rel="stylesheet">
+        <link href="<?php echo e(asset('css/fontawesome.css')); ?>" rel="stylesheet">
         <link href="<?php echo e(asset('css/reset.css')); ?>" rel="stylesheet">
         <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
         <?php if(file_exists(public_path($css))): ?>
@@ -27,7 +28,7 @@
     </head>
     <body>
         <?php echo $__env->make('layouts.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-        <?php echo $__env->make('layouts.errors', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php echo $__env->make('layouts.msgs', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <?php echo $__env->yieldContent('content'); ?>
     </body>
 </html><?php /**PATH C:\OSPanel\domains\gator\resources\views/layouts/app.blade.php ENDPATH**/ ?>

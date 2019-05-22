@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Src as SrcModel;
-use App\Requests\SrcStore as SrcStoreRequest;
+use App\Http\Requests\SrcStore as SrcStoreRequest;
 use App\Services\Src as SrcService;
 use Illuminate\Http\Request;
 
@@ -12,9 +12,14 @@ class Src extends Controller
 {
     public function index()
     {
-        $items = SrcModel::latest()->paginate(5);
-        return view($this->alias . '.index',compact('srcs'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+        return
+            view(
+                $this->alias . '.index',
+                [
+                    'i'     => (request()->input('page', 1) - 1) * 5,
+                    'items' => SrcModel::latest()->paginate(5)
+                ]
+            );
     }
 
     public function create()
@@ -22,42 +27,34 @@ class Src extends Controller
         return $this->edit(new SrcModel());
     }
 
-    public function store(SrcStoreRequest $request)
+    public function store(Request $request)
     {
-        $request->validate([
-            'name'  => 'required|string|unique:srcs|min:3|max:255',
-            'alias' => 'required|alpha_dash|unique:srcs|min:3|max:255'
-        ]);
-        SrcModel::create($request->all());
+        (new SrcService())->store($request);
         return redirect()->route($this->alias . '.index')
-                        ->with('success','SrcModel created successfully.');
+                        ->with('msg','SrcModel created successfully.');
     }
 
-    public function show(SrcModel $item)
+    public function show(SrcModel $src)
     {
-        return view($this->alias . '.show', ['item' => $item]);
+        return view($this->alias . '.show', ['item' => $src]);
     }
 
-    public function edit(SrcModel $item)
+    public function edit(SrcModel $src)
     {
-        return view($this->alias . '.edit', ['item' => $item]);
+        return view($this->alias . '.edit', ['item' => $src]);
     }
 
-    public function update(Request $request, SrcModel $item)
+    public function update(Request $request)
     {
-        $request->validate([
-            'name' => 'required',
-            'detail' => 'required',
-        ]);
-        $item->update($request->all());
+        (new SrcService())->store($request);
         return redirect()->route($this->alias . '.index')
-                        ->with('success','SrcModel updated successfully');
+                        ->with('msg','SrcModel updated successfully.');
     }
 
-    public function destroy(SrcModel $item)
+    public function destroy(SrcModel $src)
     {
-        $item->delete();
+        $src->delete();
         return redirect()->route($this->alias . '.index')
-                        ->with('success','SrcModel deleted successfully');
+                        ->with('msg','SrcModel deleted successfully');
     }
 }

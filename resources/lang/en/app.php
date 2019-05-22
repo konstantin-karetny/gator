@@ -1,10 +1,15 @@
 <?php
 
 return [
-    'alias'  => 'Alias',
-    'create' => 'Create',
-    'edit'   => 'Edit',
-    'name'   => 'Name',
-    'save'   => 'Save',
-    'src'    => 'Src'
+    'alias'            => 'Alias',
+    'delete'           => 'Delete',
+    'create'           => 'Create',
+    'edit'             => 'Edit',
+    'filter_min_votes' => 'Filter min. votes',
+    'name'             => 'Name',
+    'new'              => 'New',
+    'save'             => 'Save',
+    'src'              => 'Source',
+    'srcs'             => 'Sources',
+    'url'              => 'URL'
 ];

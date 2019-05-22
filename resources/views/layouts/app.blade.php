@@ -3,6 +3,7 @@
     <head>
         <link href="{{ asset('favicon.ico') }}" rel="shortcut icon" type="image/vnd.microsoft.icon">
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/fontawesome.css') }}" rel="stylesheet">
         <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         @if (file_exists(public_path($css)))
@@ -27,7 +28,7 @@
     </head>
     <body>
         @include('layouts.header')
-        @include('layouts.errors')
+        @include('layouts.msgs')
         @yield('content')
     </body>
 </html>

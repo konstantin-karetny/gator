@@ -14,8 +14,8 @@ class SrcStore extends FormRequest
     public function rules()
     {
         return [
-            'name'  => 'required|string|unique:srcs|min:3|max:255',
-            'alias' => 'required|alpha_dash|unique:srcs|min:3|max:255'
+            'alias' => 'required|alpha_dash|unique:srcs|min:3|max:255',
+            'name'  => 'required|string|unique:srcs|min:3|max:255'
         ];
     }
 }
