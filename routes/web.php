@@ -22,4 +22,4 @@ Route::get('posts', 'Post@items');
 Route::post('post', 'Post@store');
 Route::get('post/delete/{ids}', 'Post@delete');
 
-Route::resource('src', 'Src');
+Route::resource('src', 'Src')->middleware('auth');

@@ -22,14 +22,13 @@
                     <td>{{ ++$i }}</td>
                     <td><a href="{{ route('src.edit', $item->id) }}" title="@lang('app.edit')">{{ $item->name }}</a></td>
                     <td>{{ $item->alias }}</td>
-                    <td><a href="{{ $item->url }}">{{ $item->url }}</a></td>
+                    <td><a class="external_link" href="{{ $item->url }}" target="_blank">{{ $item->url }}</a></td>
                     <td>
                         <form action="{{ route('src.destroy', $item->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="fas fa-user"></button>
+                            <button type="submit" class="fas fa-trash-alt text-danger btn-delete" onclick="return confirm('@lang('app.sure')');" title="@lang('app.delete')"></button>
                         </form>
-                        <i class="fab fa-github-square"></i>
                     </td>
                 </tr>
             @endforeach

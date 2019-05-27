@@ -31,7 +31,7 @@ class Src extends Controller
     {
         (new SrcService())->store($request);
         return redirect()->route($this->alias . '.index')
-                        ->with('msg','SrcModel created successfully.');
+                        ->with('msg', __('app.successfully_saved'));
     }
 
     public function show(SrcModel $src)
@@ -48,13 +48,13 @@ class Src extends Controller
     {
         (new SrcService())->store($request);
         return redirect()->route($this->alias . '.index')
-                        ->with('msg','SrcModel updated successfully.');
+                        ->with('msg', __('app.successfully_saved'));
     }
 
     public function destroy(SrcModel $src)
     {
         $src->delete();
         return redirect()->route($this->alias . '.index')
-                        ->with('msg','SrcModel deleted successfully');
+                        ->with('msg', __('app.successfully_deleted'));
     }
 }

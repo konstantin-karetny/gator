@@ -60,6 +60,7 @@ img {
     vertical-align: top;
 }
 
+button,
 label {
     cursor: pointer;
 }
