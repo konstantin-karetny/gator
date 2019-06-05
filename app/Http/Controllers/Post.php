@@ -40,7 +40,6 @@ class Post extends Controller
             $item->video = isset($item->images['image460sv']['url']) ? $item->images['image460sv']['url'] : '';
             $items[$i]   = $item;
         }
-
         return
             view(
                 'post.items',
