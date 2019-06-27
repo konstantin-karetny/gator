@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Meme;
+
+use App\Models\Model;
 
 class Src extends Model
 {

@@ -1,17 +1,18 @@
 <?php
 
-namespace App\Services;
+namespace App\Services\Meme;
 
-use App\Models\Src as SrcModel;
+use App\Models\Meme\Src as MemeSrcModel;
+use App\Services\Service;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
-class Src
+class Src extends Service
 {
-    public function store(Request $request): SrcModel
+    public function store(Request $request): MemeSrcModel
     {
         $request = $this->validate($request);
-        $res     = SrcModel::findOrNew($request->input('id', 0));
+        $res     = MemeSrcModel::findOrNew($request->input('id', 0));
         $res->update(
             array_merge(
                 $request->all(),
