@@ -11,16 +11,10 @@ class Src extends Service
 {
     public function store(Request $request): MemeSrcModel
     {
-        $request = $this->validate($request);
-        $res     = MemeSrcModel::findOrNew($request->input('id', 0));
-        $res->update(
-            array_merge(
-                $request->all(),
-                [
-                    'user_id' => $request->user()->id
-                ]
-            )
-        );
+        $request      = $this->validate($request);
+        $res          = MemeSrcModel::findOrNew($request->input('id', 0));
+        $res->user_id = $request->user()->id;
+        $res->update($request->all());
         return $res;
     }
 

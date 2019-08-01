@@ -2,6 +2,7 @@
 
 namespace App\Models\User;
 
+use App\Models\Meme\Src as MemeSrcModel;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -22,7 +23,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function tasks()
+    public function memeSrcs()
+    {
+        return $this->hasMany(MemeSrcModel::class);
+    }
+
+    public function posts()
     {
         return $this->hasMany(Post::class);
     }
