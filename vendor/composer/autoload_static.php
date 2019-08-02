@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitf2484f4a6559eb66c86d70ad2498d092
+class ComposerStaticInit72c8b96531fce0b3f6241047a51afd5d
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -388,10 +388,6 @@ class ComposerStaticInitf2484f4a6559eb66c86d70ad2498d092
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Http\\Controllers\\CrudController' => __DIR__ . '/../..' . '/app/Http/Controllers/CrudController.php',
-        'App\\Http\\Controllers\\Harvester' => __DIR__ . '/../..' . '/app/Http/Controllers/Harvester.php',
-        'App\\Http\\Controllers\\Meme\\Src' => __DIR__ . '/../..' . '/app/Http/Controllers/Meme/Src.php',
-        'App\\Http\\Controllers\\Post' => __DIR__ . '/../..' . '/app/Http/Controllers/Post.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -400,25 +396,12 @@ class ComposerStaticInitf2484f4a6559eb66c86d70ad2498d092
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'App\\Http\\Requests\\Harvester' => __DIR__ . '/../..' . '/app/Http/Requests/Harvester.php',
-        'App\\Models\\Meme\\Src' => __DIR__ . '/../..' . '/app/Models/Meme/Src.php',
-        'App\\Models\\Model' => __DIR__ . '/../..' . '/app/Models/Model.php',
-        'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
-        'App\\Models\\User\\User' => __DIR__ . '/../..' . '/app/Models/User/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
-        'App\\Services\\ClassMap' => __DIR__ . '/../..' . '/app/Services/ClassMap.php',
-        'App\\Services\\Combines\\Combine' => __DIR__ . '/../..' . '/app/Services/Combines/Combine.php',
-        'App\\Services\\Combines\\NineGag' => __DIR__ . '/../..' . '/app/Services/Combines/NineGag.php',
-        'App\\Services\\CrudService' => __DIR__ . '/../..' . '/app/Services/CrudService.php',
-        'App\\Services\\HarvestItem' => __DIR__ . '/../..' . '/app/Services/HarvestItem.php',
-        'App\\Services\\Harvester' => __DIR__ . '/../..' . '/app/Services/Harvester.php',
-        'App\\Services\\Meme\\Src' => __DIR__ . '/../..' . '/app/Services/Meme/Src.php',
-        'App\\Services\\Post' => __DIR__ . '/../..' . '/app/Services/Post.php',
-        'App\\Services\\Service' => __DIR__ . '/../..' . '/app/Services/Service.php',
+        'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
         'BeyondCode\\DumpServer\\Dumper' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/Dumper.php',
@@ -4030,10 +4013,10 @@ class ComposerStaticInitf2484f4a6559eb66c86d70ad2498d092
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitf2484f4a6559eb66c86d70ad2498d092::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitf2484f4a6559eb66c86d70ad2498d092::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitf2484f4a6559eb66c86d70ad2498d092::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitf2484f4a6559eb66c86d70ad2498d092::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit72c8b96531fce0b3f6241047a51afd5d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit72c8b96531fce0b3f6241047a51afd5d::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit72c8b96531fce0b3f6241047a51afd5d::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit72c8b96531fce0b3f6241047a51afd5d::$classMap;
 
         }, null, ClassLoader::class);
     }

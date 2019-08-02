@@ -1386,17 +1386,17 @@
     },
     {
         "name": "nunomaduro/collision",
-        "version": "v2.1.1",
-        "version_normalized": "2.1.1.0",
+        "version": "v3.0.1",
+        "version_normalized": "3.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/nunomaduro/collision.git",
-            "reference": "b5feb0c0d92978ec7169232ce5d70d6da6b29f63"
+            "reference": "af42d339fe2742295a54f6fdd42aaa6f8c4aca68"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/nunomaduro/collision/zipball/b5feb0c0d92978ec7169232ce5d70d6da6b29f63",
-            "reference": "b5feb0c0d92978ec7169232ce5d70d6da6b29f63",
+            "url": "https://api.github.com/repos/nunomaduro/collision/zipball/af42d339fe2742295a54f6fdd42aaa6f8c4aca68",
+            "reference": "af42d339fe2742295a54f6fdd42aaa6f8c4aca68",
             "shasum": ""
         },
         "require": {
@@ -1406,12 +1406,12 @@
             "symfony/console": "~2.8|~3.3|~4.0"
         },
         "require-dev": {
-            "laravel/framework": "5.7.*",
+            "laravel/framework": "5.8.*",
             "nunomaduro/larastan": "^0.3.0",
-            "phpstan/phpstan": "^0.10",
-            "phpunit/phpunit": "~7.3"
+            "phpstan/phpstan": "^0.11",
+            "phpunit/phpunit": "~8.0"
         },
-        "time": "2018-11-21T21:40:54+00:00",
+        "time": "2019-03-07T21:35:13+00:00",
         "type": "library",
         "extra": {
             "laravel": {
@@ -1650,18 +1650,18 @@
         "authors": [
             {
                 "name": "Arne Blankerts",
-                "email": "arne@blankerts.de",
-                "role": "Developer"
+                "role": "Developer",
+                "email": "arne@blankerts.de"
             },
             {
                 "name": "Sebastian Heuer",
-                "email": "sebastian@phpeople.de",
-                "role": "Developer"
+                "role": "Developer",
+                "email": "sebastian@phpeople.de"
             },
             {
                 "name": "Sebastian Bergmann",
-                "email": "sebastian@phpunit.de",
-                "role": "Developer"
+                "role": "Developer",
+                "email": "sebastian@phpunit.de"
             }
         ],
         "description": "Library for handling version information and constraints"
@@ -1994,8 +1994,8 @@
         "authors": [
             {
                 "name": "Sebastian Bergmann",
-                "email": "sebastian@phpunit.de",
-                "role": "lead"
+                "role": "lead",
+                "email": "sebastian@phpunit.de"
             }
         ],
         "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
@@ -2047,8 +2047,8 @@
         "authors": [
             {
                 "name": "Sebastian Bergmann",
-                "email": "sebastian@phpunit.de",
-                "role": "lead"
+                "role": "lead",
+                "email": "sebastian@phpunit.de"
             }
         ],
         "description": "FilterIterator implementation that filters files based on a list of suffixes.",
@@ -2091,8 +2091,8 @@
         "authors": [
             {
                 "name": "Sebastian Bergmann",
-                "email": "sebastian@phpunit.de",
-                "role": "lead"
+                "role": "lead",
+                "email": "sebastian@phpunit.de"
             }
         ],
         "description": "Simple template engine.",
@@ -2142,8 +2142,8 @@
         "authors": [
             {
                 "name": "Sebastian Bergmann",
-                "email": "sebastian@phpunit.de",
-                "role": "lead"
+                "role": "lead",
+                "email": "sebastian@phpunit.de"
             }
         ],
         "description": "Utility class for timing",
@@ -3180,8 +3180,8 @@
         "authors": [
             {
                 "name": "Sebastian Bergmann",
-                "email": "sebastian@phpunit.de",
-                "role": "lead"
+                "role": "lead",
+                "email": "sebastian@phpunit.de"
             }
         ],
         "description": "Library that helps with managing the version number of Git-hosted PHP projects",
