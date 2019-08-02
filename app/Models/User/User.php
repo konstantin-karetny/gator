@@ -2,6 +2,7 @@
 
 namespace App\Models\User;
 
+use App\Models\Meme\Meme as MemeModel;
 use App\Models\Meme\Src as MemeSrcModel;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -24,6 +25,11 @@ class User extends Authenticatable
             'password',
             'remember_token',
         ];
+
+    public function memes()
+    {
+        return $this->hasMany(MemeModel::class);
+    }
 
     public function memeSrcs()
     {

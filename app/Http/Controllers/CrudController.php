@@ -6,6 +6,7 @@ use App\Models\Model;
 use App\Services\ClassMap;
 use App\Services\Service;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 class CrudController extends Controller
 {
@@ -19,7 +20,7 @@ class CrudController extends Controller
         ClassMap::getModelName($this)::findOrNew($id)->delete();
         return
             redirect()
-                ->route($this->alias . '.index')
+                ->route($this->getRouterAlias() . '.index')
                 ->with('msg', __('app.successfully_deleted'));
     }
 
@@ -27,18 +28,23 @@ class CrudController extends Controller
     {
         return
             view(
-                $this->alias . '.edit',
+                ClassMap::getViewName($this) . '.edit',
                 [
                     'item' => ClassMap::getModelName($this)::findOrNew($id)
                 ]
             );
     }
 
+    public function getRouterAlias()
+    {
+        return Route::getRoutes()->getByName(ClassMap::getAlias($this) . '.index')->uri();
+    }
+
     public function index()
     {
         return
             view(
-                $this->alias . '.index',
+                ClassMap::getViewName($this) . '.index',
                 [
                     'i'     => (request()->input('page', 1) - 1) * 5,
                     'items' => ClassMap::getModelName($this)::latest()->paginate(5)
@@ -50,7 +56,7 @@ class CrudController extends Controller
     {
         return
             view(
-                $this->alias . '.show',
+                ClassMap::getViewName($this) . '.show',
                 [
                     'item' => ClassMap::getModelName($this)::findOrFail($id)
                 ]
@@ -62,7 +68,7 @@ class CrudController extends Controller
         ClassMap::getService($this)->store($request);
         return
             redirect()
-                ->route($this->alias . '.index')
+                ->route($this->getRouterAlias() . '.index')
                 ->with('msg', __('app.successfully_saved'));
     }
 

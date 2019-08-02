@@ -23,17 +23,25 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->composer('*', function ($view) {
-            $arr    = explode('.', $view->getName());
-            $branch = reset($arr);
-            $name   = end($arr);
-            view()->share([
-                'branch' => $branch,
-                'class'  => $branch . ' ' . $name,
-                'css'    => 'css/'  . $branch . '/' . $name . '.css',
-                'js'     => 'js/'   . $branch . '/' . $name . '.js',
-                'name'   => $name
-            ]);
-        });
+        view()->composer(
+            '*',
+            function ($view) {
+                $arr = explode('.', $view->getName());
+                if (count($arr) < 3) {
+                    return;
+                }
+                $alias  = $arr[1];
+                $branch = $arr[0];
+                $name   = $arr[2];
+                view()->share([
+                    'alias'  => $alias,
+                    'branch' => $branch,
+                    'class'  => $branch . ' ' . $alias . ' ' . $name,
+                    'css'    => 'css/'  . $branch . '/' . $alias . '/' . $name . '.css',
+                    'js'     => 'js/'   . $branch . '/' . $alias . '/' . $name . '.js',
+                    'name'   => $name
+                ]);
+            }
+        );
     }
 }

@@ -55,4 +55,12 @@ class ClassMap
             ucfirst(static::getBranch($class)) . '\\' .
             ucfirst(static::getAlias($class));
     }
+
+
+    public static function getViewName($class): string
+    {
+        return
+            static::getBranch($class) . '.' .
+            static::getAlias($class);
+    }
 }

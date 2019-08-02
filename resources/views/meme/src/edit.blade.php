@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
-        <form action="{{ $item->id ? route($branch . '.update', $item->id) : route($branch . '.store') }}" method="POST">
+        <form action="{{ $item->id ? route('src.update', $item->id) : route('src.store') }}" method="POST">
             <div class="form-group row">
                 <div class="header col-sm">
                     <h1>@lang('app.src') - @lang('app.' . ($item->id ? 'edit' : 'create'))</h1>
                 </div>
                 <div class="btns col-sm text-sm-right">
-                    <a class="btn btn-primary" href="{{ route($branch . '.index') }}"> Back</a>
+                    <a class="btn btn-primary" href="{{ route('src.index') }}"> Back</a>
                     <button type="submit" class="btn btn-success">@lang('app.save')</button>
                 </div>
             </div>

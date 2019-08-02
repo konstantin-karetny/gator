@@ -26,7 +26,7 @@
         </script>
         <title>{{ config('app.name') }}</title>
     </head>
-    <body>
+    <body class="{{ $class }}">
         @include('layouts.header')
         @include('layouts.msgs')
         @yield('content')
