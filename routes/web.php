@@ -22,4 +22,5 @@ Route::get('posts', 'Post@items');
 Route::post('post', 'Post@store');
 Route::get('post/delete/{ids}', 'Post@delete');
 
+Route::resource('meme', 'Meme\Meme');
 Route::resource('src', 'Meme\Src')->middleware('auth');

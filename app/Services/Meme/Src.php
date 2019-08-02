@@ -14,7 +14,7 @@ class Src extends CrudService
             'alias'            => 'required|alpha_dash|min:3|max:255|unique:srcs,alias,' . $id,
             'filter_min_votes' => 'required|integer',
             'name'             => 'required|string|min:3|max:255|unique:srcs,name,' . $id,
-            'url'              => 'required|url|min:3|max:255|unique:srcs,url,' . $id
+            'url'              => 'required|url|min:5|max:255|unique:srcs,url,' . $id
         ]);
         return $request;
     }

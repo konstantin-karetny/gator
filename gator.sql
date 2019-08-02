@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Aug 02, 2019 at 12:33 PM
+-- Generation Time: Aug 02, 2019 at 05:59 PM
 -- Server version: 8.0.15
 -- PHP Version: 7.3.2
 
@@ -25,6 +25,27 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `memes`
+--
+
+CREATE TABLE `memes` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `src_id` int(11) NOT NULL,
+  `original_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `body` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `poster` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `added` tinyint(1) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `migrations`
 --
 
@@ -42,7 +63,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (24, '2014_10_12_000000_create_users_table', 1),
 (25, '2014_10_12_100000_create_password_resets_table', 1),
 (26, '2019_05_11_220259_create_posts_table', 1),
-(27, '2019_05_14_114356_create_srcs_table', 1);
+(27, '2019_05_14_114356_create_srcs_table', 1),
+(28, '2019_08_02_093405_create_memes_table', 2);
 
 -- --------------------------------------------------------
 
@@ -94,7 +116,7 @@ CREATE TABLE `srcs` (
 --
 
 INSERT INTO `srcs` (`id`, `user_id`, `alias`, `name`, `url`, `filter_min_votes`, `created_at`, `updated_at`) VALUES
-(1, 1, 'ninegag', '9gag', 'https://9gag.com', 3000, '2019-08-02 06:33:27', '2019-08-02 06:33:27');
+(1, 1, 'ninegag', '9gag', 'https://9gag.com', 3000, '2019-08-02 06:33:27', '2019-08-02 10:45:02');
 
 -- --------------------------------------------------------
 
@@ -123,6 +145,12 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `re
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `memes`
+--
+ALTER TABLE `memes`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `migrations`
@@ -161,10 +189,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `memes`
+--
+ALTER TABLE `memes`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `posts`

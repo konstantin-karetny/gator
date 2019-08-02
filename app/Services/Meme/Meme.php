@@ -11,10 +11,10 @@ class Meme extends CrudService
     {
         $id = (int) $request->input('id', 0);
         $request->validate([
-            'alias'            => 'required|alpha_dash|min:3|max:255|unique:srcs,alias,' . $id,
-            'filter_min_votes' => 'required|integer',
-            'name'             => 'required|string|min:3|max:255|unique:srcs,name,' . $id,
-            'url'              => 'required|url|min:3|max:255|unique:srcs,url,' . $id
+            'body'        => 'required|string|min:5|max:1000|unique:memes,body,' . $id,
+            'description' => 'string|max:1000',
+            'name'        => 'required|string|min:3|max:255|unique:memes,name,' . $id,
+            'poster'      => 'string|min:5|max:255'
         ]);
         return $request;
     }
