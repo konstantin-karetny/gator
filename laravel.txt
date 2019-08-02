@@ -1,0 +1,8 @@
+Laravel.su
+http://laravel.su/docs/5.4
+
+Laravel.ru
+https://laravel.ru/docs/v5
+
+Laravel 5.8 CRUD (Create Read Update Delete) Tutorial For Beginners
+https://itsolutionstuff.com/post/laravel-58-crud-create-read-update-delete-tutorial-for-beginnersexample.html

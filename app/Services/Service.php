@@ -2,4 +2,17 @@
 
 namespace App\Services;
 
-class Service {}
+use App\Services\ClassMap;
+
+class Service
+{
+    protected
+        $alias  = '',
+        $branch = '';
+
+    public function __construct()
+    {
+        $this->alias  = ClassMap::getAlias($this);
+        $this->branch = ClassMap::getBranch($this);
+    }
+}

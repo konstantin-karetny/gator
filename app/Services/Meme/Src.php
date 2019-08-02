@@ -2,22 +2,11 @@
 
 namespace App\Services\Meme;
 
-use App\Models\Meme\Src as MemeSrcModel;
-use App\Services\Service;
+use App\Services\CrudService;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
 
-class Src extends Service
+class Src extends CrudService
 {
-    public function store(Request $request): MemeSrcModel
-    {
-        $request      = $this->validate($request);
-        $res          = MemeSrcModel::findOrNew($request->input('id', 0));
-        $res->user_id = $request->user()->id;
-        $res->update($request->all());
-        return $res;
-    }
-
     public function validate(Request $request): Request
     {
         $id = (int) $request->input('id', 0);
