@@ -11,9 +11,41 @@
                 </div>
             </div>
             <div class="form-group row required">
+                <label for="added" class="col-sm-2 col-form-label"><?php echo app('translator')->getFromJson('app.added'); ?></label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="added" name="added" type="checkbox" data-toggle="toggle" data-on="<?php echo app('translator')->getFromJson('app.yes'); ?>" data-off="<?php echo app('translator')->getFromJson('app.no'); ?>" data-onstyle="success" data-offstyle="danger" value="1"<?php echo e($item->added ? ' checked' : ''); ?>>
+                </div>
+            </div>
+            <div class="form-group row required">
+                <label for="src_id" class="col-sm-2 col-form-label"><?php echo app('translator')->getFromJson('app.src'); ?></label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="src_id" name="src_id" required>
+                        <?php $__currentLoopData = $srcs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $src): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <option value="<?php echo e($src->id); ?>"<?php echo e($src->id == $item->src_id ? ' selected' : ''); ?>><?php echo e($src->name); ?></option>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row required">
+                <label for="original_id" class="col-sm-2 col-form-label"><?php echo app('translator')->getFromJson('app.original_id'); ?></label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="original_id" name="original_id" value="<?php echo e($item->original_id); ?>" required>
+                </div>
+            </div>
+            <div class="form-group row required">
                 <label for="name" class="col-sm-2 col-form-label"><?php echo app('translator')->getFromJson('app.name'); ?></label>
                 <div class="col-sm-10">
                     <input class="form-control" id="name" name="name" value="<?php echo e($item->name); ?>" required>
+                </div>
+            </div>
+            <div class="form-group row required">
+                <label for="type_id" class="col-sm-2 col-form-label"><?php echo app('translator')->getFromJson('app.type'); ?></label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="type_id" name="type_id" value="<?php echo e($item->type_id); ?>" required>
+                        <?php $__currentLoopData = $types; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $type): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <option value="<?php echo e($type->id); ?>"<?php echo e($type->id == $item->type_id ? ' selected' : ''); ?>><?php echo app('translator')->getFromJson('app.' . $type->alias); ?></option>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </select>
                 </div>
             </div>
             <div class="form-group row required">
@@ -25,7 +57,7 @@
             <div class="form-group row">
                 <label for="description" class="col-sm-2 col-form-label"><?php echo app('translator')->getFromJson('app.description'); ?></label>
                 <div class="col-sm-10">
-                    <textarea class="form-control" id="description" name="description" value="<?php echo e($item->description); ?>"></textarea>
+                    <textarea class="form-control" id="description" name="description"><?php echo e($item->description); ?></textarea>
                 </div>
             </div>
             <div class="form-group row">

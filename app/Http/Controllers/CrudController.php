@@ -65,7 +65,8 @@ class CrudController extends Controller
 
     public function store(Request $request)
     {
-        ClassMap::getService($this)->store($request);
+        $service = ClassMap::getService($this);
+        $service->store($service->prepareRequest($request));
         return
             redirect()
                 ->route($this->getRouterAlias() . '.index')

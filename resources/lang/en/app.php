@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'added'                => 'Added',
     'alias'                => 'Alias',
     'body'                 => 'Body',
     'delete'               => 'Delete',
@@ -8,10 +9,13 @@ return [
     'create'               => 'Create',
     'edit'                 => 'Edit',
     'filter_min_votes'     => 'Filter min. votes',
+    'image'                => 'Image',
     'name'                 => 'Name',
     'meme'                 => 'Meme',
     'memes'                => 'Memes',
     'new'                  => 'New',
+    'no'                   => 'No',
+    'original_id'          => 'Original id',
     'poster'               => 'Poster',
     'save'                 => 'Save',
     'src'                  => 'Source',
@@ -19,5 +23,9 @@ return [
     'successfully_deleted' => 'Successfully deleted',
     'successfully_saved'   => 'Successfully saved',
     'sure'                 => 'Are you sure?',
-    'url'                  => 'URL'
+    'text'                 => 'Text',
+    'type'                 => 'Type',
+    'url'                  => 'URL',
+    'video'                => 'Video',
+    'yes'                  => 'Yes'
 ];

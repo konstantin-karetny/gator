@@ -47,7 +47,7 @@
 }
 
 /* FORM A */
-.form-group.required label:after {
+.form-group.required > label:after {
     content: ' *';
     color: #DC3545;
 }

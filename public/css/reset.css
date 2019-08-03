@@ -61,7 +61,8 @@ img {
 }
 
 button,
-label {
+label,
+select {
     cursor: pointer;
 }
 
