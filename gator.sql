@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Aug 02, 2019 at 05:59 PM
+-- Generation Time: Aug 03, 2019 at 04:14 AM
 -- Server version: 8.0.15
 -- PHP Version: 7.3.2
 
@@ -31,17 +31,24 @@ SET time_zone = "+00:00";
 CREATE TABLE `memes` (
   `id` int(10) UNSIGNED NOT NULL,
   `src_id` int(11) NOT NULL,
-  `original_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `original_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `type_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `body` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `poster` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `body` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `poster` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `added` tinyint(1) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `memes`
+--
+
+INSERT INTO `memes` (`id`, `src_id`, `original_id`, `type_id`, `user_id`, `name`, `body`, `description`, `poster`, `added`, `created_at`, `updated_at`) VALUES
+(1, 1, 'aro12AB', 3, 1, 'Sploooooosh!', 'https://img-9gag-fun.9cache.com/photo/aro12AB_460sv.mp4', 'Description', 'https://img-9gag-fun.9cache.com/photo/aro12AB_460s.jpg', 0, '2019-08-02 18:57:12', '2019-08-02 20:19:22');
 
 -- --------------------------------------------------------
 
@@ -64,7 +71,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (25, '2014_10_12_100000_create_password_resets_table', 1),
 (26, '2019_05_11_220259_create_posts_table', 1),
 (27, '2019_05_14_114356_create_srcs_table', 1),
-(28, '2019_08_02_093405_create_memes_table', 2);
+(28, '2019_08_02_093405_create_memes_table', 2),
+(30, '2019_08_02_202205_create_types_table', 3);
 
 -- --------------------------------------------------------
 
@@ -116,7 +124,27 @@ CREATE TABLE `srcs` (
 --
 
 INSERT INTO `srcs` (`id`, `user_id`, `alias`, `name`, `url`, `filter_min_votes`, `created_at`, `updated_at`) VALUES
-(1, 1, 'ninegag', '9gag', 'https://9gag.com', 3000, '2019-08-02 06:33:27', '2019-08-02 10:45:02');
+(1, 1, 'ninegag', '9gag', 'https://9gag.com', 3000, '2019-08-02 06:33:27', '2019-08-02 20:19:50');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `types`
+--
+
+CREATE TABLE `types` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `alias` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `types`
+--
+
+INSERT INTO `types` (`id`, `alias`) VALUES
+(1, 'image'),
+(2, 'text'),
+(3, 'video');
 
 -- --------------------------------------------------------
 
@@ -178,6 +206,12 @@ ALTER TABLE `srcs`
   ADD KEY `srcs_user_id_index` (`user_id`);
 
 --
+-- Indexes for table `types`
+--
+ALTER TABLE `types`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -192,13 +226,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `memes`
 --
 ALTER TABLE `memes`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `posts`
@@ -211,6 +245,12 @@ ALTER TABLE `posts`
 --
 ALTER TABLE `srcs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `types`
+--
+ALTER TABLE `types`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
