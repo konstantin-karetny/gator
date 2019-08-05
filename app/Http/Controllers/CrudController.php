@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Model;
+use App\Http\Controllers\Controller;
 use App\Services\ClassMap;
-use App\Services\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -66,7 +65,7 @@ class CrudController extends Controller
     public function store(Request $request)
     {
         $service = ClassMap::getService($this);
-        $service->store($service->prepareRequest($request));
+        $service->store($request->all());
         return
             redirect()
                 ->route($this->getRouterAlias() . '.index')

@@ -12,6 +12,7 @@
         <table>
             <tr>
                 <th>#</th>
+                <th>@lang('app.favicon')</th>
                 <th>@lang('app.name')</th>
                 <th>@lang('app.alias')</th>
                 <th>@lang('app.url')</th>
@@ -20,9 +21,16 @@
             @foreach ($items as $item)
                 <tr>
                     <td>{{ ++$i }}</td>
-                    <td><a href="{{ route('src.edit', $item->id) }}" title="@lang('app.edit')">{{ $item->name }}</a></td>
+                    <td class="favicon">
+                        <img src="{{ $item->favicon }}">
+                    </td>
+                    <td>
+                        <a href="{{ route('src.edit', $item->id) }}" title="@lang('app.edit')">{{ $item->name }}</a>
+                    </td>
                     <td>{{ $item->alias }}</td>
-                    <td><a class="external_link" href="{{ $item->url }}" target="_blank">{{ $item->url }}</a></td>
+                    <td>
+                        <a class="external_link" href="{{ $item->url }}" target="_blank">{{ $item->url }}</a>
+                    </td>
                     <td>
                         <form action="{{ route('src.destroy', $item->id) }}" method="POST">
                             @csrf

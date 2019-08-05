@@ -1,0 +1,46 @@
+.meme.meme.indexfront .items {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.meme.meme.indexfront .items .item {
+    margin: 0 25px 50px 25px;
+    padding: 25px 45px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.meme.meme.indexfront .items .item > * {
+    margin-bottom: 10px;
+}
+
+.meme.meme.indexfront .items .item header {
+    margin-bottom: 20px;
+}
+
+.meme.meme.indexfront .items .item header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.meme.meme.indexfront .items .item .body {
+    text-align: center;
+}
+
+.meme.meme.indexfront .items .item .body > * {
+    width: 100%;
+}
+
+.meme.meme.indexfront .items .item .src {
+    font-size: 0.75rem;
+}
+
+.meme.meme.indexfront .items .item .src a > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.meme.meme.indexfront .items .item .src img {
+    max-width: 1rem;
+    max-height: 1rem;
+    margin-right: 5px;
+}

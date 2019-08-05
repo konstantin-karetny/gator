@@ -35,6 +35,12 @@
                     <input class="form-control" id="filter_min_votes" name="filter_min_votes" value="{{ $item->filter_min_votes }}" required>
                 </div>
             </div>
+            <div class="form-group row required">
+                <label for="favicon" class="col-sm-2 col-form-label">@lang('app.favicon')</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="favicon" name="favicon" value="{{ $item->favicon }}" required>
+                </div>
+            </div>
             <input name="id" type="hidden" value="{{ $item->id }}">
             @csrf
             @method($item->id ? 'PUT' : 'POST')

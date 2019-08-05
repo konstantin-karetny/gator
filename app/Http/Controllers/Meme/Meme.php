@@ -22,4 +22,17 @@ class Meme extends CrudController
                 ]
             );
     }
+
+    public function indexFront()
+    {
+        return
+            view(
+                ClassMap::getViewName($this) . '.indexfront',
+                [
+                    'i'     => (request()->input('page', 1) - 1) * 5,
+                    'items' => ClassMap::getModelName($this)::latest()->paginate(5),
+                    'srcs'  => MemeSrcModel::all(['id', 'favicon'])->keyBy('id')
+                ]
+            );
+    }
 }

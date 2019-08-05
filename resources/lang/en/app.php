@@ -8,6 +8,7 @@ return [
     'description'          => 'Description',
     'create'               => 'Create',
     'edit'                 => 'Edit',
+    'favicon'              => 'Favicon',
     'filter_min_votes'     => 'Filter min. votes',
     'image'                => 'Image',
     'name'                 => 'Name',

@@ -9,25 +9,28 @@ use Illuminate\Http\Request;
 
 class CrudService extends Service
 {
-    public function prepareRequest(Request $request): Request
+    public function prepareDataForStore(array $data): array
     {
-        $request->request->add([
-            'user_id' => $request->user()->getKey()
-        ]);
-        return $request;
+        return
+            array_merge(
+                $data,
+                [
+                    'user_id' => request()->user()->getKey()
+                ]
+            );
     }
 
-    public function store(Request $request): Model
+    public function store(array $data): Model
     {
-        $request = $this->validate($request);
-        $model   = ClassMap::getModelName($this)::findOrNew($request->input('id', 0));
-        $model->fill($request->all());
-        $model->save();
-        return $model;
+        $data = $this->validate($this->prepareDataForStore($data));
+        $res  = ClassMap::getModelName($this)::findOrNew((int) $data['id']);
+        $res->fill($data);
+        $res->save();
+        return $res;
     }
 
-    public function validate(Request $request): Request
+    public function validate(array $data): array
     {
-        return $request;
+        return $data;
     }
 }

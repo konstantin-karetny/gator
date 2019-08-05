@@ -73,24 +73,24 @@ class Harvester extends Controller
         return json_encode($res);
    }*/
 
-   public function api() {
-        //$url = 'https://agile-river-75797.herokuapp.com/crawl.json?spider_name=imgur&start_requests=true';
-        $url = 'https://agile-river-75797.herokuapp.com/crawl.json?spider_name=ninegag&start_requests=true';
-        $curl = curl_init($url);
-        //curl_setopt($curl, CURLOPT_POST, true);
-        //curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query([]));
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        $res = curl_exec($curl);
-        curl_close($curl);
-        if ($res !== false) {
-            $res = json_decode($res, true);
-        }
-        $reply = [];
-        foreach ((array) $res['items'] as $item) {
-            if ($item) {
-                $reply[] = $item['raw'];
-            }
-        }
-        return json_encode($reply);
-   }
+    public function api() {
+         //$url = 'https://agile-river-75797.herokuapp.com/crawl.json?spider_name=imgur&start_requests=true';
+         $url = 'https://agile-river-75797.herokuapp.com/crawl.json?spider_name=ninegag&start_requests=true';
+         $curl = curl_init($url);
+         //curl_setopt($curl, CURLOPT_POST, true);
+         //curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query([]));
+         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+         $res = curl_exec($curl);
+         curl_close($curl);
+         if ($res !== false) {
+             $res = json_decode($res, true);
+         }
+         $reply = [];
+         foreach ((array) $res['items'] as $item) {
+             if ($item) {
+                 $reply[] = $item['raw'];
+             }
+         }
+         return json_encode($reply);
+    }
 }

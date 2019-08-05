@@ -17,6 +17,7 @@ class CreateSrcsTable extends Migration
                 $table->string('name');
                 $table->string('url');
                 $table->unsignedSmallInteger('filter_min_votes');
+                $table->string('favicon');
                 $table->timestamps();
             }
         );
