@@ -18,7 +18,7 @@ class Meme extends CrudController
                 [
                     'item'  => MemeMemeModel::findOrNew($id),
                     'srcs'  => MemeSrcModel::all(['id', 'name']),
-                    'types' => MemeTypeModel::all()
+                    'types' => MemeTypeModel::all(['id', 'alias'])
                 ]
             );
     }
@@ -31,7 +31,8 @@ class Meme extends CrudController
                 [
                     'i'     => (request()->input('page', 1) - 1) * 5,
                     'items' => ClassMap::getModelName($this)::latest()->paginate(5),
-                    'srcs'  => MemeSrcModel::all(['id', 'favicon'])->keyBy('id')
+                    'srcs'  => MemeSrcModel::all(['id', 'favicon'])->keyBy('id'),
+                    'types' => MemeTypeModel::all(['id', 'alias'])->keyBy('id')
                 ]
             );
     }

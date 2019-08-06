@@ -9,7 +9,7 @@
                     </h1>
                 </header>
                 <div class="body">
-                    @if ($item->type_id == 3)
+                    @if ($types[$item->type_id]->alias == 'video')
                         <video preload="auto" poster="{{ $item->poster }}" controls loop muted>
                             <source src="{{ $item->body }}" type="video/mp4">
                         </video>
@@ -34,5 +34,6 @@
                 </div>
             </div>
         @endforeach
+        {{ $items->links() }}
     </div>
 @endsection
