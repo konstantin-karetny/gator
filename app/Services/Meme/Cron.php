@@ -28,7 +28,7 @@ class Cron extends Service
     public function getItems(): array
     {
         try {
-            //return array_slice(json_decode(file_get_contents('D:\Downloads\api.json'), false, 512, JSON_THROW_ON_ERROR)->items, 0, 10);
+            //return array_slice(json_decode(file_get_contents('C:\OSPanel\domains\gator\zout\api.json'), false, 512, JSON_THROW_ON_ERROR)->items, 0, 10);
             return $this->api();
         } catch (Exception $e) {
             dd($e);

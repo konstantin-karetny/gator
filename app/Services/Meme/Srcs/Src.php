@@ -4,13 +4,18 @@ namespace App\Services\Meme\Srcs;
 
 use App\Models\Meme\Meme as MemeMemeModel;
 use App\Models\Meme\Src as MemeSrcModel;
+use App\Services\ClassMap;
 use App\Services\Meme\Meme as MemeMemeService;
 
 abstract class Src
 {
     public function __construct()
     {
-        foreach (MemeSrcModel::where('alias', strtolower(trim(class_basename($this))))->first()->getAttributes() as $k => $v) {
+        foreach (
+            MemeSrcModel::where('alias', ClassMap::getAlias($this))
+                ->first()
+                ->getAttributes() as $k => $v
+        ) {
             $this->$k = $v;
         }
     }
