@@ -2,79 +2,62 @@
 
 namespace App\Services\Meme;
 
-use App\Services\Meme\Srcs\Src as MemeSrcsSrc;
-use App\Services\Meme\Srcs\NineGag as MemeSrcsNineGag;
-use App\Services\Service;
+use App\Lib\Log;
+use App\Models\Meme\Meme as MemeMemeModel;
+use App\Models\Meme\Src as MemeSrcModel;
+use App\Services\CronService;
+use App\Services\Meme\Srcs\Src as MemeSrcsSrcService;
+use Carbon\Carbon;
+use Throwable;
 
-class Cron extends Service
+class Cron extends CronService
 {
     public function add(array $items): bool
     {
-        try {
-            foreach ($items as $item) {
-                $src   = $this->getSrc($item->src_alias);
-                $model = $src->format($item);
-                if ($src->filter($model)) {
-                    $src->store($model);
+        foreach ($items as $item) {
+            try {
+                $service = $this->getSrcService($item->src_alias);
+                $model   = $service->format($item);
+                if ($service->filter($model)) {
+                    $service->store($model);
                 }
+            } catch (Throwable $e) {
+                Log::fileLine(
+                    'Failed to add an item. ' .
+                    $e->getMessage() . '. ' .
+                    print_r($item, true)
+                );
             }
-        } catch (\Exception $e) {
-            dd($e);
-            // log
         }
         return true;
     }
 
-    public function getItems(): array
+    public function getSrcService(string $alias): MemeSrcsSrcService
     {
-        try {
-            //return array_slice(json_decode(file_get_contents('C:\OSPanel\domains\gator\zout\api.json'), false, 512, JSON_THROW_ON_ERROR)->items, 0, 10);
-            return $this->api();
-        } catch (Exception $e) {
-            dd($e);
-            // log
-        }
+        $class = 'App\Services\Meme\Srcs\\' . ucfirst($alias);
+        return new $class();
     }
 
-    public function getSrc(string $alias): MemeSrcsSrc
+    public function requestItems(): array
     {
-        switch (strtolower(trim($alias))) {
-            case 'ninegag':
-                return new MemeSrcsNineGag();
+        $items = [];
+        foreach (MemeSrcModel::all(['alias', 'request_items_quantity']) as $model) {
+            $service = $this->getSrcService($model->alias);
+            $items   = array_merge(
+                $items,
+                $service->requestItems($model->request_items_quantity)
+            );
         }
+        return $items;
     }
 
-
-
-
-
-
-
-
-
-
-
-    public function api() {
-        //$url = 'https://agile-river-75797.herokuapp.com/crawl.json?spider_name=imgur&start_requests=true';
-        $url = 'https://agile-river-75797.herokuapp.com/crawl.json?spider_name=ninegag&start_requests=true';
-        $curl = curl_init($url);
-        //curl_setopt($curl, CURLOPT_POST, true);
-        //curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query([]));
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        $res = curl_exec($curl);
-        curl_close($curl);
-        return json_decode($res, false, 512, JSON_THROW_ON_ERROR)->items;
-
-
-        if ($res !== false) {
-            $res = json_decode($res, true);
+    public function select(): bool
+    {
+        $models = MemeMemeModel::all()
+            ->where('created_at', '<', Carbon::now()->subSeconds(config('app.meme.lifetime')))
+            ->where('added', '=', 0);
+        foreach ($models as $model) {
+            
         }
-        $reply = [];
-        foreach ((array) $res['items'] as $item) {
-            if ($item) {
-                $reply[] = $item['raw'];
-            }
-        }
-        return $reply;
     }
 }

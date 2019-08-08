@@ -4,6 +4,7 @@ namespace App\Services\Meme;
 
 use App\Services\CrudService;
 use Illuminate\Support\Facades\Validator;
+use Exception;
 
 class Src extends CrudService
 {
@@ -13,12 +14,13 @@ class Src extends CrudService
         $validator = Validator::make(
             $data,
             [
-                'alias'            => 'required|alpha_dash|min:3|max:255|unique:srcs,alias,' . $id,
-                'id'               => 'integer',
-                'favicon'          => 'required|url|min:5|max:255',
-                'filter_min_votes' => 'required|integer',
-                'name'             => 'required|string|min:3|max:255|unique:srcs,name,' . $id,
-                'url'              => 'required|url|min:5|max:255|unique:srcs,url,' . $id
+                'alias'                  => 'required|alpha_dash|min:3|max:255|unique:srcs,alias,' . $id,
+                'id'                     => 'integer',
+                'favicon'                => 'required|url|min:5|max:255',
+                'filter_min_votes'       => 'required|integer',
+                'name'                   => 'required|string|min:3|max:255|unique:srcs,name,' . $id,
+                'request_items_quantity' => 'required|integer',
+                'url'                    => 'required|url|min:5|max:255|unique:srcs,url,' . $id
             ]
         );
         if ($validator->errors()->all()) {

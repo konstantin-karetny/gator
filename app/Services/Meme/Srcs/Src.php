@@ -2,22 +2,19 @@
 
 namespace App\Services\Meme\Srcs;
 
+use App\Lib\ClassMap;
 use App\Models\Meme\Meme as MemeMemeModel;
 use App\Models\Meme\Src as MemeSrcModel;
-use App\Services\ClassMap;
 use App\Services\Meme\Meme as MemeMemeService;
 
 abstract class Src
 {
+    protected
+        $model = null;
+
     public function __construct()
     {
-        foreach (
-            MemeSrcModel::where('alias', ClassMap::getAlias($this))
-                ->first()
-                ->getAttributes() as $k => $v
-        ) {
-            $this->$k = $v;
-        }
+        $this->model = MemeSrcModel::where('alias', ClassMap::getAlias($this))->first();
     }
 
     public function filter(MemeMemeModel $model): bool
@@ -33,6 +30,25 @@ abstract class Src
     public function format($item): MemeMemeModel
     {
         return new MemeMemeModel();
+    }
+
+    public function formatRequestItems(array $items, int $quantity): array
+    {
+        $formatteds = array_slice($items, 0, $quantity);
+        foreach ($formatteds as $item) {
+            $item->src_alias = $this->getModel()->alias;
+        }
+        return $formatteds;
+    }
+
+    public function getModel(): MemeSrcModel
+    {
+        return $this->model;
+    }
+
+    public function requestItems(int $quantity): array
+    {
+        return [];
     }
 
     public function store(MemeMemeModel $model): MemeMemeModel

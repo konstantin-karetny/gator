@@ -14,6 +14,7 @@
 Auth::routes();
 Route::get('/', 'Meme\Meme@indexFront');
 Route::get('cron-add', 'Meme\Cron@add');
+Route::get('cron-select', 'Meme\Cron@select');
 Route::resource('meme', 'Meme\Meme')->middleware('auth');
 Route::resource('src', 'Meme\Src')->middleware('auth');
 

@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Meme;
 
 use App\Http\Controllers\CrudController;
+use App\Lib\ClassMap;
 use App\Models\Meme\Meme as MemeMemeModel;
 use App\Models\Meme\Src as MemeSrcModel;
 use App\Models\Meme\Type as MemeTypeModel;
-use App\Services\ClassMap;
 
 class Meme extends CrudController
 {

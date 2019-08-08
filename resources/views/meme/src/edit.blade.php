@@ -30,6 +30,12 @@
                 </div>
             </div>
             <div class="form-group row required">
+                <label for="request_items_quantity" class="col-sm-2 col-form-label">@lang('app.request_items_quantity')</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="request_items_quantity" name="request_items_quantity" value="{{ $item->request_items_quantity ?: config('app.meme.src.default_request_items_quantity') }}" required>
+                </div>
+            </div>
+            <div class="form-group row required">
                 <label for="filter_min_votes" class="col-sm-2 col-form-label">@lang('app.filter_min_votes')</label>
                 <div class="col-sm-10">
                     <input class="form-control" id="filter_min_votes" name="filter_min_votes" value="{{ $item->filter_min_votes }}" required>

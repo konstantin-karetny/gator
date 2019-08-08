@@ -2,8 +2,8 @@
 
 namespace App\Services;
 
+use App\Lib\ClassMap;
 use App\Models\Model;
-use App\Services\ClassMap;
 use App\Services\Service;
 use Illuminate\Http\Request;
 

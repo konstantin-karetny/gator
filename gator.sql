@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Aug 03, 2019 at 04:14 AM
+-- Generation Time: Aug 08, 2019 at 06:02 PM
 -- Server version: 8.0.15
 -- PHP Version: 7.3.2
 
@@ -48,7 +48,119 @@ CREATE TABLE `memes` (
 --
 
 INSERT INTO `memes` (`id`, `src_id`, `original_id`, `type_id`, `user_id`, `name`, `body`, `description`, `poster`, `added`, `created_at`, `updated_at`) VALUES
-(1, 1, 'aro12AB', 3, 1, 'Sploooooosh!', 'https://img-9gag-fun.9cache.com/photo/aro12AB_460sv.mp4', 'Description', 'https://img-9gag-fun.9cache.com/photo/aro12AB_460s.jpg', 0, '2019-08-02 18:57:12', '2019-08-02 20:19:22');
+(1, 1, 'aro12AB', 3, 1, 'Sploooooosh!', 'https://img-9gag-fun.9cache.com/photo/aro12AB_460sv.mp4', 'Description', 'https://img-9gag-fun.9cache.com/photo/aro12AB_460s.jpg', 0, '2019-08-02 18:57:12', '2019-08-05 09:52:12'),
+(30, 1, 'avo23DO', 3, 1, 'This Principal rocking out with his students', 'https://img-9gag-fun.9cache.com/photo/avo23DO_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/avo23DO_460s.jpg', 0, '2019-08-05 11:00:16', '2019-08-05 11:00:16'),
+(31, 1, 'a0Rv2oZ', 1, 1, 'It really do be like that', 'https://img-9gag-fun.9cache.com/photo/a0Rv2oZ_460s.jpg', '', '', 0, '2019-08-05 11:13:10', '2019-08-05 11:13:10'),
+(32, 1, 'aN0mN23', 3, 1, 'Toddlers have great moves', 'https://img-9gag-fun.9cache.com/photo/aN0mN23_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aN0mN23_460s.jpg', 0, '2019-08-05 11:13:10', '2019-08-05 11:13:10'),
+(33, 1, 'aDgRy97', 3, 1, 'Wait a little bit for the bro moment', 'https://img-9gag-fun.9cache.com/photo/aDgRy97_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aDgRy97_460s.jpg', 0, '2019-08-05 11:13:10', '2019-08-05 11:13:10'),
+(34, 1, 'a5Rp4yy', 3, 1, 'Liquid Nitrogen mixed with 1500 Ping Pong Balls', 'https://img-9gag-fun.9cache.com/photo/a5Rp4yy_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/a5Rp4yy_460s.jpg', 0, '2019-08-05 11:13:10', '2019-08-05 11:13:10'),
+(35, 1, 'aMYegeW', 3, 1, 'Poor little fella', 'https://img-9gag-fun.9cache.com/photo/aMYegeW_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aMYegeW_460s.jpg', 0, '2019-08-05 11:13:10', '2019-08-05 11:13:10'),
+(36, 1, 'aV0jpRv', 1, 1, 'Things get better tomorrow maybe?', 'https://img-9gag-fun.9cache.com/photo/aV0jpRv_460s.jpg', '', '', 0, '2019-08-05 11:13:11', '2019-08-05 11:13:11'),
+(37, 1, 'aV0jyVn', 3, 1, 'This is a $1200 torch, throws light upto 900 metres ahead, 53000 lumens', 'https://img-9gag-fun.9cache.com/photo/aV0jyVn_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aV0jyVn_460s.jpg', 0, '2019-08-05 11:13:11', '2019-08-05 11:13:11'),
+(38, 1, 'a3Rv6v5', 1, 1, 'The father was adopted', 'https://img-9gag-fun.9cache.com/photo/a3Rv6v5_460s.jpg', '', '', 0, '2019-08-05 11:13:11', '2019-08-05 11:13:11'),
+(39, 1, 'a85dgNV', 3, 1, 'What level is this ?', 'https://img-9gag-fun.9cache.com/photo/a85dgNV_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/a85dgNV_460s.jpg', 0, '2019-08-05 11:13:11', '2019-08-05 11:13:11'),
+(40, 1, 'aQ16w8K', 1, 1, 'Send me the weirdest images saved to your device', 'https://img-9gag-fun.9cache.com/photo/aQ16w8K_460s.jpg', '', '', 0, '2019-08-05 12:06:38', '2019-08-05 12:06:38'),
+(41, 1, 'aDgRBxZ', 3, 1, 'Musician: \"So, Which instrument do you play?\" Me : \"Ship Horn\"', 'https://img-9gag-fun.9cache.com/photo/aDgRBxZ_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aDgRBxZ_460s.jpg', 0, '2019-08-05 12:06:38', '2019-08-05 12:06:38'),
+(42, 1, 'aR06nWA', 1, 1, 'The RGB looks that great.', 'https://img-9gag-fun.9cache.com/photo/aR06nWA_460s.jpg', '', '', 0, '2019-08-05 12:06:38', '2019-08-05 12:06:38'),
+(43, 1, 'aV0jG4n', 1, 1, 'She’s not wrong.', 'https://img-9gag-fun.9cache.com/photo/aV0jG4n_460s.jpg', '', '', 0, '2019-08-05 12:06:38', '2019-08-05 12:06:38'),
+(44, 1, 'avo23Ad', 1, 1, 'Bird lovers start a family.', 'https://img-9gag-fun.9cache.com/photo/avo23Ad_460s.jpg', '', '', 0, '2019-08-05 12:06:38', '2019-08-05 12:06:38'),
+(45, 1, 'aEgdLD9', 1, 1, 'No but like seriously how', 'https://img-9gag-fun.9cache.com/photo/aEgdLD9_460s.jpg', '', '', 0, '2019-08-05 12:06:38', '2019-08-05 12:06:38'),
+(46, 1, 'aL06YRv', 1, 1, 'Sunset in Guilin', 'https://img-9gag-fun.9cache.com/photo/aL06YRv_460s.jpg', '', '', 0, '2019-08-05 12:06:38', '2019-08-05 12:06:38'),
+(47, 1, 'awoNRxB', 1, 1, 'Benefits of Public Transport (Expectations vs. Reality)', 'https://img-9gag-fun.9cache.com/photo/awoNRxB_460s.jpg', '', '', 0, '2019-08-05 12:06:38', '2019-08-05 12:06:38'),
+(48, 1, 'aqg4qOZ', 1, 1, 'It\'s the guns, stupid!', 'https://img-9gag-fun.9cache.com/photo/aqg4qOZ_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(49, 1, 'am5q3Do', 3, 1, 'Omni-directional treadmill for virtual reality', 'https://img-9gag-fun.9cache.com/photo/am5q3Do_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/am5q3Do_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(50, 1, 'aEgdr1O', 1, 1, 'Regular Russian BBQ', 'https://img-9gag-fun.9cache.com/photo/aEgdr1O_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(51, 1, 'a6NrAvm', 1, 1, 'Shame on you', 'https://img-9gag-fun.9cache.com/photo/a6NrAvm_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(52, 1, 'ae5Kvrj', 3, 1, 'Feeding the frog', 'https://img-9gag-fun.9cache.com/photo/ae5Kvrj_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/ae5Kvrj_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(53, 1, 'a7wvzPA', 1, 1, 'He is not wrong', 'https://img-9gag-fun.9cache.com/photo/a7wvzPA_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(54, 1, 'az17N4b', 1, 1, 'Remember this?', 'https://img-9gag-fun.9cache.com/photo/az17N4b_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(55, 1, 'ad5yEwV', 1, 1, 'Uma Thurman & daughter Maya Hawke', 'https://img-9gag-fun.9cache.com/photo/ad5yEwV_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(56, 1, 'aV0jAZO', 3, 1, 'What is this witchcraft?!', 'https://img-9gag-fun.9cache.com/photo/aV0jAZO_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aV0jAZO_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(57, 1, 'aDgRBAG', 1, 1, 'Trannies aren’t gay', 'https://img-9gag-fun.9cache.com/photo/aDgRBAG_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(58, 1, 'aAgBjqd', 1, 1, 'The airport in Vienna has a miniature model of every plane that has landed or departed from it', 'https://img-9gag-fun.9cache.com/photo/aAgBjqd_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(59, 1, 'aKd4QQ1', 3, 1, 'Best trade ever.', 'https://img-9gag-fun.9cache.com/photo/aKd4QQ1_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aKd4QQ1_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(60, 1, 'a85dRV6', 1, 1, 'It’s all fecal', 'https://img-9gag-fun.9cache.com/photo/a85dRV6_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(61, 1, 'aWEBwqZ', 1, 1, 'Long distance relationship is killing me', 'https://img-9gag-fun.9cache.com/photo/aWEBwqZ_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(62, 1, 'ag5rW7x', 1, 1, 'He\'s done it again! Credits: Low Cost Cosplay', 'https://img-9gag-fun.9cache.com/photo/ag5rW7x_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(63, 1, 'ax7Eqe1', 3, 1, 'The ultimate kitchen tool', 'https://img-9gag-fun.9cache.com/photo/ax7Eqe1_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/ax7Eqe1_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(64, 1, 'a6NrP1R', 3, 1, 'Birb gathering donations for the American Eagle Foundation.', 'https://img-9gag-fun.9cache.com/photo/a6NrP1R_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/a6NrP1R_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(65, 1, 'ad5yEjM', 3, 1, 'Storm the booty like the beaches of Normandy', 'https://img-9gag-fun.9cache.com/photo/ad5yEjM_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/ad5yEjM_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(66, 1, 'ad5yG19', 1, 1, 'The color of power', 'https://img-9gag-fun.9cache.com/photo/ad5yG19_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(67, 1, 'ae5Knbp', 1, 1, 'Now that\'s confusing.', 'https://img-9gag-fun.9cache.com/photo/ae5Knbp_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(68, 1, 'aKd4QGb', 3, 1, 'Nature finds a way', 'https://img-9gag-fun.9cache.com/photo/aKd4QGb_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aKd4QGb_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(69, 1, 'aDgRKKZ', 3, 1, 'What a noob', 'https://img-9gag-fun.9cache.com/photo/aDgRKKZ_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aDgRKKZ_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(70, 1, 'aqg4PKv', 1, 1, ' \"Rob? Tsk tsk tsk. That\'s a naughty word. We never rob. We just sort of borrow a bit from those who can afford it.\"', 'https://img-9gag-fun.9cache.com/photo/aqg4PKv_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(71, 1, 'aKd4oyN', 3, 1, 'Did you know? Not only are cats a liquid, cats conduct electricity.', 'https://img-9gag-fun.9cache.com/photo/aKd4oyN_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aKd4oyN_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(72, 1, 'aO0oLz2', 3, 1, 'Weapon of choice.', 'https://img-9gag-fun.9cache.com/photo/aO0oLz2_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aO0oLz2_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(73, 1, 'a85dxYd', 3, 1, 'Humor that doesn\'t fade with age.', 'https://img-9gag-fun.9cache.com/photo/a85dxYd_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/a85dxYd_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(74, 1, 'a85dxxY', 1, 1, 'Murica right now', 'https://img-9gag-fun.9cache.com/photo/a85dxxY_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(75, 1, 'abr3NME', 1, 1, 'Amen brothers', 'https://img-9gag-fun.9cache.com/photo/abr3NME_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(76, 1, 'a9RjxG1', 1, 1, 'Trick the system', 'https://img-9gag-fun.9cache.com/photo/a9RjxG1_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(77, 1, 'ae5K8Bb', 1, 1, 'Best game ever for me! :) I\'ve been playing it ever since it was released in 1998 but it\'s still a perfect game!', 'https://img-9gag-fun.9cache.com/photo/ae5K8Bb_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(78, 1, 'avo2KmW', 3, 1, 'The Simpsons', 'https://img-9gag-fun.9cache.com/photo/avo2KmW_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/avo2KmW_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(79, 1, 'aBg9BZD', 3, 1, 'Rhinos give sleeping lions a wake up call', 'https://img-9gag-fun.9cache.com/photo/aBg9BZD_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aBg9BZD_460s.jpg', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(80, 1, 'a1Rp3p2', 1, 1, 'FBI trap', 'https://img-9gag-fun.9cache.com/photo/a1Rp3p2_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(81, 1, 'a9Rjg20', 1, 1, 'Omelette du fromage!!', 'https://img-9gag-fun.9cache.com/photo/a9Rjg20_460s.jpg', '', '', 0, '2019-08-05 12:06:39', '2019-08-05 12:06:39'),
+(82, 1, 'a85dgB6', 1, 1, 'Sophisticated', 'https://img-9gag-fun.9cache.com/photo/a85dgB6_460s.jpg', '', '', 0, '2019-08-05 12:06:40', '2019-08-05 12:06:40'),
+(83, 1, 'aDgA0XB', 3, 1, 'You seeing this', 'https://img-9gag-fun.9cache.com/photo/aDgA0XB_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aDgA0XB_460s.jpg', 0, '2019-08-06 05:09:28', '2019-08-06 05:09:28'),
+(84, 1, 'a0R89OB', 3, 1, 'This Peruvian chef’s face as people from his own village choose Gordon Ramsay’s dish over his in a blind taste test', 'https://img-9gag-fun.9cache.com/photo/a0R89OB_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/a0R89OB_460s.jpg', 0, '2019-08-06 05:09:28', '2019-08-06 05:09:28'),
+(85, 1, 'aAgRVLg', 1, 1, 'I would like to know', 'https://img-9gag-fun.9cache.com/photo/aAgRVLg_460s.jpg', '', '', 0, '2019-08-06 05:09:28', '2019-08-06 05:09:28'),
+(86, 1, 'ae5jNPv', 1, 1, 'Lifespans of the animal kingdom', 'https://img-9gag-fun.9cache.com/photo/ae5jNPv_460s.jpg', '', '', 0, '2019-08-06 05:09:28', '2019-08-06 05:09:28'),
+(87, 1, 'ayo75Yr', 1, 1, 'Humble yourself.', 'https://img-9gag-fun.9cache.com/photo/ayo75Yr_460s.jpg', '', '', 0, '2019-08-06 05:09:28', '2019-08-06 05:09:28'),
+(88, 1, 'ag53yGx', 1, 1, 'Who says no to that :>', 'https://img-9gag-fun.9cache.com/photo/ag53yGx_460s.jpg', '', '', 0, '2019-08-06 05:09:28', '2019-08-06 05:09:28'),
+(89, 1, 'ao5Ezp0', 3, 1, 'That\'s the end, till next week!', 'https://img-9gag-fun.9cache.com/photo/ao5Ezp0_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/ao5Ezp0_460s.jpg', 0, '2019-08-06 05:09:28', '2019-08-06 05:09:28'),
+(90, 1, 'ao5Ezzx', 1, 1, 'Odd Parents, Fairyly Odd Parents', 'https://img-9gag-fun.9cache.com/photo/ao5Ezzx_460s.jpg', '', '', 0, '2019-08-06 05:09:28', '2019-08-06 05:09:28'),
+(91, 1, 'aZ7bbyV', 1, 1, 'Fairy tea parties are always on the table.', 'https://img-9gag-fun.9cache.com/photo/aZ7bbyV_460s.jpg', '', '', 0, '2019-08-06 05:09:28', '2019-08-06 05:09:28'),
+(92, 1, 'a9Rbb1m', 1, 1, 'Installing Tinder as a female - Day one experience summed up', 'https://img-9gag-fun.9cache.com/photo/a9Rbb1m_460s.jpg', '', '', 0, '2019-08-06 05:09:28', '2019-08-06 05:09:28'),
+(93, 1, 'a2RzzWE', 1, 1, 'You won’t disturb my human anymore', 'https://img-9gag-fun.9cache.com/photo/a2RzzWE_460s.jpg', '', '', 0, '2019-08-06 05:09:28', '2019-08-06 05:09:28'),
+(94, 1, 'ax7dEp1', 3, 1, 'Literally a snake', 'https://img-9gag-fun.9cache.com/photo/ax7dEp1_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/ax7dEp1_460s.jpg', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(95, 1, 'az1ggRZ', 1, 1, 'Woman playing pinball (1978)', 'https://img-9gag-fun.9cache.com/photo/az1ggRZ_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(96, 1, 'aPRwwbg', 1, 1, 'Funny, cuz it\'s true.', 'https://img-9gag-fun.9cache.com/photo/aPRwwbg_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(97, 1, 'ax7EpBK', 3, 1, '...and then it folded', 'https://img-9gag-fun.9cache.com/photo/ax7EpBK_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/ax7EpBK_460s.jpg', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(98, 1, 'az1g7jq', 1, 1, 'We all went through this', 'https://img-9gag-fun.9cache.com/photo/az1g7jq_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(99, 1, 'a6NrWEq', 1, 1, 'Too much dota Bois lmao', 'https://img-9gag-fun.9cache.com/photo/a6NrWEq_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(100, 1, 'aV0zzwv', 1, 1, 'You’re breathtaking', 'https://img-9gag-fun.9cache.com/photo/aV0zzwv_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(101, 1, 'am5Nq74', 3, 1, 'Meanwhile in Brazil...', 'https://img-9gag-fun.9cache.com/photo/am5Nq74_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/am5Nq74_460s.jpg', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(102, 1, 'awoNqNR', 1, 1, 'This pretty much sums up all slavic nations....', 'https://img-9gag-fun.9cache.com/photo/awoNqNR_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(103, 1, 'aEgdevo', 3, 1, 'Guy is eating a Tarantula', 'https://img-9gag-fun.9cache.com/photo/aEgdevo_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aEgdevo_460s.jpg', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(104, 1, 'a3Rvonv', 1, 1, 'Unexpectedly wholesome', 'https://img-9gag-fun.9cache.com/photo/a3Rvonv_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(105, 1, 'aqg94wL', 1, 1, 'Goosfraba.....', 'https://img-9gag-fun.9cache.com/photo/aqg94wL_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(106, 1, 'ax7EpW2', 1, 1, 'Leaves from the vine...', 'https://img-9gag-fun.9cache.com/photo/ax7EpW2_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(107, 1, 'a85dPKd', 1, 1, 'Cringe overloading', 'https://img-9gag-fun.9cache.com/photo/a85dPKd_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(108, 1, 'aQ16Yrw', 1, 1, 'Stay positive ya’ll.', 'https://img-9gag-fun.9cache.com/photo/aQ16Yrw_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(109, 1, 'ae5KoxB', 1, 1, 'This is beyond science', 'https://img-9gag-fun.9cache.com/photo/ae5KoxB_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(110, 1, 'aAgBn32', 3, 1, 'Anime intro / Anime outro', 'https://img-9gag-fun.9cache.com/photo/aAgBn32_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aAgBn32_460s.jpg', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(111, 1, 'aY7j897', 3, 1, '@beeple_crap (ig)', 'https://img-9gag-fun.9cache.com/photo/aY7j897_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aY7j897_460s.jpg', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(112, 1, 'abr3P48', 3, 1, 'I believe i can fly..', 'https://img-9gag-fun.9cache.com/photo/abr3P48_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/abr3P48_460s.jpg', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(113, 1, 'ag5rRq6', 1, 1, 'You are special!', 'https://img-9gag-fun.9cache.com/photo/ag5rRq6_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(114, 1, 'aV0jn72', 1, 1, 'Im so disappointed..', 'https://img-9gag-fun.9cache.com/photo/aV0jn72_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(115, 1, 'a0RvmLL', 1, 1, 'Remember this', 'https://img-9gag-fun.9cache.com/photo/a0RvmLL_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(116, 1, 'az17NOz', 1, 1, 'America right now', 'https://img-9gag-fun.9cache.com/photo/az17NOz_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(117, 1, 'a5Rpmmy', 3, 1, '\"The Artillery Truck is Useless\"', 'https://img-9gag-fun.9cache.com/photo/a5Rpmmy_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/a5Rpmmy_460s.jpg', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(118, 1, 'aO0o64r', 3, 1, 'Don’t care how old still gold', 'https://img-9gag-fun.9cache.com/photo/aO0o64r_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aO0o64r_460s.jpg', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(119, 1, 'am5qDE2', 1, 1, 'I can imagine the headlines... “gamers take up arms to play real life FPS after their games were taken away”', 'https://img-9gag-fun.9cache.com/photo/am5qDE2_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(120, 1, 'aR065r7', 1, 1, 'It be like dat...', 'https://img-9gag-fun.9cache.com/photo/aR065r7_460s.jpg', '', '', 0, '2019-08-06 05:09:29', '2019-08-06 05:09:29'),
+(121, 1, 'aqg438P', 1, 1, 'Argument', 'https://img-9gag-fun.9cache.com/photo/aqg438P_460s.jpg', '', '', 0, '2019-08-06 05:09:30', '2019-08-06 05:09:30'),
+(122, 1, 'aAgBWEE', 1, 1, 'God I wish it was me', 'https://img-9gag-fun.9cache.com/photo/aAgBWEE_460s.jpg', '', '', 0, '2019-08-06 05:09:30', '2019-08-06 05:09:30'),
+(123, 1, 'aPR6NdV', 1, 1, 'Or blame video games?', 'https://img-9gag-fun.9cache.com/photo/aPR6NdV_460s.jpg', '', '', 0, '2019-08-06 05:09:30', '2019-08-06 05:09:30'),
+(124, 1, 'ae5KoAq', 1, 1, 'Vladimir Ilyich Lenin: \'Power to the Soviets\', rally for revolution - 1917', 'https://img-9gag-fun.9cache.com/photo/ae5KoAq_460s.jpg', '', '', 0, '2019-08-06 05:09:30', '2019-08-06 05:09:30'),
+(125, 1, 'a85dPwd', 1, 1, 'Great picture of Davide Basile: Phoenix shaped magma eruption', 'https://img-9gag-fun.9cache.com/photo/a85dPwd_460s.jpg', '', '', 0, '2019-08-06 05:09:30', '2019-08-06 05:09:30'),
+(126, 1, 'ao5mBpe', 1, 1, 'Stay as far as you can from them please!', 'https://img-9gag-fun.9cache.com/photo/ao5mBpe_460s.jpg', '', '', 0, '2019-08-06 05:09:30', '2019-08-06 05:09:30'),
+(127, 1, 'a85LqV1', 3, 1, 'When the lake doesn’t spawn', 'https://img-9gag-fun.9cache.com/photo/a85LqV1_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/a85LqV1_460s.jpg', 0, '2019-08-08 10:03:26', '2019-08-08 10:03:26'),
+(128, 1, 'a5Re1GV', 3, 1, 'GREEN SHIRT GUY!! THE HERO WE NEED', 'https://img-9gag-fun.9cache.com/photo/a5Re1GV_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/a5Re1GV_460s.jpg', 0, '2019-08-08 10:03:26', '2019-08-08 10:03:26'),
+(129, 1, 'aY7NVeq', 1, 1, 'I dare you i double dare you motherf*ucker!', 'https://img-9gag-fun.9cache.com/photo/aY7NVeq_460s.jpg', '', '', 0, '2019-08-08 10:03:26', '2019-08-08 10:03:26'),
+(130, 1, 'aZ7bDZQ', 3, 1, 'The cat will swim too.', 'https://img-9gag-fun.9cache.com/photo/aZ7bDZQ_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aZ7bDZQ_460s.jpg', 0, '2019-08-08 10:03:26', '2019-08-08 10:03:26'),
+(131, 1, 'aL0R12g', 3, 1, 'Shoes built to expand and grow with less fortunate children.', 'https://img-9gag-fun.9cache.com/photo/aL0R12g_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aL0R12g_460s.jpg', 0, '2019-08-08 10:03:26', '2019-08-08 10:03:26'),
+(132, 1, 'a5ReXGq', 1, 1, '$1200 a month rent on his own body', 'https://img-9gag-fun.9cache.com/photo/a5ReXGq_460s.jpg', '', '', 0, '2019-08-08 10:03:26', '2019-08-08 10:03:26'),
+(133, 1, 'aDgAYQO', 3, 1, 'Fight looks so real.', 'https://img-9gag-fun.9cache.com/photo/aDgAYQO_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aDgAYQO_460s.jpg', 0, '2019-08-08 10:03:26', '2019-08-08 10:03:26'),
+(134, 1, 'az1ge6j', 1, 1, 'The pay is almost in any job really bad and not worth. Also dont live to work, work to live. Every boss / manager is hungry for money.', 'https://img-9gag-fun.9cache.com/photo/az1ge6j_460s.jpg', '', '', 0, '2019-08-08 10:03:26', '2019-08-08 10:03:26'),
+(135, 1, 'ag53odg', 3, 1, 'I can\'t stop watching this! :))', 'https://img-9gag-fun.9cache.com/photo/ag53odg_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/ag53odg_460s.jpg', 0, '2019-08-08 10:03:26', '2019-08-08 10:03:26'),
+(138, 1, 'ao5Eymw', 1, 1, 'What happens when lightning strikes a flag on a golf course', 'https://img-9gag-fun.9cache.com/photo/ao5Eymw_460s.jpg', '', '', 0, '2019-08-08 10:05:51', '2019-08-08 10:05:51'),
+(139, 1, 'aPRwMjB', 1, 1, 'Boss called me during my grandfather funeral to work, even after telling her where I was the day before', 'https://img-9gag-fun.9cache.com/photo/aPRwMjB_460s.jpg', '', '', 0, '2019-08-08 10:05:51', '2019-08-08 10:05:51'),
+(140, 1, 'aMY2EpX', 3, 1, 'Man saves kitty from traffic', 'https://img-9gag-fun.9cache.com/photo/aMY2EpX_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aMY2EpX_460s.jpg', 0, '2019-08-08 13:43:50', '2019-08-08 13:43:50'),
+(141, 1, 'aO0KxAD', 1, 1, 'Frank in Stein', 'https://img-9gag-fun.9cache.com/photo/aO0KxAD_460s.jpg', '', '', 0, '2019-08-08 13:46:12', '2019-08-08 13:46:12'),
+(142, 1, 'aO0K8Br', 1, 1, 'This would be to funny, and a source of countless memes if they will make it happen', 'https://img-9gag-fun.9cache.com/photo/aO0K8Br_460s.jpg', '', '', 0, '2019-08-08 14:03:11', '2019-08-08 14:03:11'),
+(143, 1, 'aAgR0No', 3, 1, 'Narcissism at Work', 'https://img-9gag-fun.9cache.com/photo/aAgR0No_460sv.mp4', '', 'https://img-9gag-fun.9cache.com/photo/aAgR0No_460s.jpg', 0, '2019-08-08 14:03:11', '2019-08-08 14:03:11');
 
 -- --------------------------------------------------------
 
@@ -114,7 +226,9 @@ CREATE TABLE `srcs` (
   `alias` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `request_items_quantity` smallint(5) NOT NULL,
   `filter_min_votes` smallint(5) UNSIGNED NOT NULL,
+  `favicon` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -123,8 +237,8 @@ CREATE TABLE `srcs` (
 -- Dumping data for table `srcs`
 --
 
-INSERT INTO `srcs` (`id`, `user_id`, `alias`, `name`, `url`, `filter_min_votes`, `created_at`, `updated_at`) VALUES
-(1, 1, 'ninegag', '9gag', 'https://9gag.com', 3000, '2019-08-02 06:33:27', '2019-08-02 20:19:50');
+INSERT INTO `srcs` (`id`, `user_id`, `alias`, `name`, `url`, `request_items_quantity`, `filter_min_votes`, `favicon`, `created_at`, `updated_at`) VALUES
+(1, 1, 'ninegag', '9gag', 'https://9gag.com', 10, 0, 'https://assets-9gag-fun.9cache.com/s/fab0aa49/deda323611ca8f5cb81c52136e6b0948fad550c6/static/dist/core/img/favicon.ico', '2019-08-02 06:33:27', '2019-08-08 14:02:09');
 
 -- --------------------------------------------------------
 
@@ -134,7 +248,7 @@ INSERT INTO `srcs` (`id`, `user_id`, `alias`, `name`, `url`, `filter_min_votes`,
 
 CREATE TABLE `types` (
   `id` int(10) UNSIGNED NOT NULL,
-  `alias` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL
+  `alias` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -226,7 +340,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `memes`
 --
 ALTER TABLE `memes`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=144;
 
 --
 -- AUTO_INCREMENT for table `migrations`

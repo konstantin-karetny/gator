@@ -2,15 +2,19 @@
 
 namespace App\Http\Controllers\Meme;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\CronController;
 use App\Services\Meme\Cron as MemeCronService;
 
-class Cron extends Controller
+class Cron extends CronController
 {
     public function add()
     {
         $service = new MemeCronService();
-        $service->add($service->getItems());
-        echo 'Complete';
+        $service->add($service->requestItems());
+    }
+
+    public function select()
+    {
+        (new MemeCronService())->select();
     }
 }
