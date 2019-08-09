@@ -4,9 +4,7 @@
         @foreach ($items as $item)
             <div class="item col-12">
                 <header>
-                    <h1>
-                        {{ $item->name }}
-                    </h1>
+                    <h1>{{ $item->name }}</h1>
                 </header>
                 <div class="body">
                     @if ($types[$item->type_id]->alias == 'video')

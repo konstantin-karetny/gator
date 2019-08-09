@@ -20,7 +20,7 @@ class CreateMemesTable extends Migration
                 $table->string('body', 1000);
                 $table->string('description', 1000);
                 $table->string('preview');
-                $table->boolean('added');
+                $table->boolean('permanent');
                 $table->timestamps();
             }
         );

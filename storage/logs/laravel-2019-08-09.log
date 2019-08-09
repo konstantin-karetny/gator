@@ -3307,3 +3307,1316 @@
 [2019-08-09 17:50:00] local.NOTICE: Cron 'cron-select' successfully complete. File C:\OSPanel\domains\gator\app\Http\Controllers\CronController.php line 27  
 [2019-08-09 17:52:30] local.NOTICE: Cron 'cron-select' start. File C:\OSPanel\domains\gator\app\Http\Controllers\CronController.php line 17  
 [2019-08-09 17:52:31] local.NOTICE: Cron 'cron-select' successfully complete. File C:\OSPanel\domains\gator\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 21:23:06] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 21:23:06] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => a9RbXEm
+    [url] => http://9gag.com/gag/a9RbXEm
+    [title] => This is so me
+    [type] => Photo
+    [nsfw] => 0
+    [upVoteCount] => 413
+    [downVoteCount] => 19
+    [creationTs] => 1565370437
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 700
+                    [height] => 604
+                    [url] => https://img-9gag-fun.9cache.com/photo/a9RbXEm_700b.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/a9RbXEm_700bwp.webp
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 397
+                    [url] => https://img-9gag-fun.9cache.com/photo/a9RbXEm_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/a9RbXEm_460swp.webp
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 20
+    [postSection] => stdClass Object
+        (
+            [name] => Funny
+            [url] => https://9gag.com/funny
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557376304.186_U5U7u5_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:23:06] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => ae5jx8W
+    [url] => http://9gag.com/gag/ae5jx8W
+    [title] => I&#039;ve been doing it wrong this whole time, and maybe you have too
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 9391
+    [downVoteCount] => 147
+    [creationTs] => 1565354706
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460sv.mp4
+                    [hasAudio] => 1
+                    [duration] => 66
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460svwm.webm
+                    [hasAudio] => 1
+                    [duration] => 66
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 319
+    [postSection] => stdClass Object
+        (
+            [name] => Awesome
+            [url] => https://9gag.com/awesome
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557217995.2799_bYQyJU_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:23:06] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => ad50eOd
+    [url] => http://9gag.com/gag/ad50eOd
+    [title] => Wait For It...
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 4273
+    [downVoteCount] => 71
+    [creationTs] => 1565361434
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460sv.mp4
+                    [hasAudio] => 1
+                    [duration] => 32
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460svwm.webm
+                    [hasAudio] => 1
+                    [duration] => 32
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 96
+    [postSection] => stdClass Object
+        (
+            [name] => Awesome
+            [url] => https://9gag.com/awesome
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557217995.2799_bYQyJU_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:23:06] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => an5qEyz
+    [url] => http://9gag.com/gag/an5qEyz
+    [title] => OMG ...!! .... Someone&#039;s orange ball!!
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 6207
+    [downVoteCount] => 52
+    [creationTs] => 1565358315
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 257
+                    [url] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 257
+                    [url] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 256
+                    [url] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460sv.mp4
+                    [hasAudio] => 0
+                    [duration] => 0
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 256
+                    [url] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460svwm.webm
+                    [hasAudio] => 0
+                    [duration] => 0
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 115
+    [postSection] => stdClass Object
+        (
+            [name] => GIF
+            [url] => https://9gag.com/gif
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557283958.4323_AXE2aJ_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [key] => Leopard
+                    [url] => /tag/leopard
+                )
+
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:23:06] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => a0R81bL
+    [url] => http://9gag.com/gag/a0R81bL
+    [title] => THE Definition of Hangry
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 3384
+    [downVoteCount] => 146
+    [creationTs] => 1565358499
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460sv.mp4
+                    [hasAudio] => 0
+                    [duration] => 0
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460svwm.webm
+                    [hasAudio] => 0
+                    [duration] => 0
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 172
+    [postSection] => stdClass Object
+        (
+            [name] => GIF
+            [url] => https://9gag.com/gif
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557283958.4323_AXE2aJ_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [key] => Chihuahua
+                    [url] => /tag/chihuahua
+                )
+
+            [1] => stdClass Object
+                (
+                    [key] => Chinese Imperial Dog
+                    [url] => /tag/chinese-imperial-dog
+                )
+
+            [2] => stdClass Object
+                (
+                    [key] => Tibetan spaniel
+                    [url] => /tag/tibetan-spaniel
+                )
+
+            [3] => stdClass Object
+                (
+                    [key] => Puppy
+                    [url] => /tag/puppy
+                )
+
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:23:06] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => a7wL9Qb
+    [url] => http://9gag.com/gag/a7wL9Qb
+    [title] => Wtf is happening
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 7009
+    [downVoteCount] => 289
+    [creationTs] => 1565355132
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460sv.mp4
+                    [hasAudio] => 0
+                    [duration] => 0
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460svwm.webm
+                    [hasAudio] => 0
+                    [duration] => 0
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 177
+    [postSection] => stdClass Object
+        (
+            [name] => GIF
+            [url] => https://9gag.com/gif
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557283958.4323_AXE2aJ_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [key] => Rob Dougan
+                    [url] => /tag/rob-dougan
+                )
+
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:23:06] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => a1Rv2gR
+    [url] => http://9gag.com/gag/a1Rv2gR
+    [title] => I&rsquo;ve watched this 17 times now
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 2872
+    [downVoteCount] => 189
+    [creationTs] => 1565364742
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460sv.mp4
+                    [hasAudio] => 0
+                    [duration] => 0
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460svwm.webm
+                    [hasAudio] => 0
+                    [duration] => 0
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 76
+    [postSection] => stdClass Object
+        (
+            [name] => WTF
+            [url] => https://9gag.com/wtf
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557310702.1267_UgysAp_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:23:06] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => awo04NB
+    [url] => http://9gag.com/gag/awo04NB
+    [title] => Who needs CGI when you&#039;re a literal badass
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 1494
+    [downVoteCount] => 171
+    [creationTs] => 1565366774
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/awo04NB_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/awo04NB_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/awo04NB_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/awo04NB_460sv.mp4
+                    [hasAudio] => 0
+                    [duration] => 0
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/awo04NB_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/awo04NB_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/awo04NB_460svwm.webm
+                    [hasAudio] => 0
+                    [duration] => 0
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 118
+    [postSection] => stdClass Object
+        (
+            [name] => GIF
+            [url] => https://9gag.com/gif
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557283958.4323_AXE2aJ_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [key] => Arya Stark
+                    [url] => /tag/arya-stark
+                )
+
+            [1] => stdClass Object
+                (
+                    [key] => Brienne of Tarth
+                    [url] => /tag/brienne-of-tarth
+                )
+
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:23:06] local.NOTICE: Cron 'cron-add' unsuccessfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 21:24:38] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 21:24:38] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => a9RbXEm
+    [url] => http://9gag.com/gag/a9RbXEm
+    [title] => This is so me
+    [type] => Photo
+    [nsfw] => 0
+    [upVoteCount] => 413
+    [downVoteCount] => 19
+    [creationTs] => 1565370437
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 700
+                    [height] => 604
+                    [url] => https://img-9gag-fun.9cache.com/photo/a9RbXEm_700b.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/a9RbXEm_700bwp.webp
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 397
+                    [url] => https://img-9gag-fun.9cache.com/photo/a9RbXEm_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/a9RbXEm_460swp.webp
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 20
+    [postSection] => stdClass Object
+        (
+            [name] => Funny
+            [url] => https://9gag.com/funny
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557376304.186_U5U7u5_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:24:38] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => ae5jx8W
+    [url] => http://9gag.com/gag/ae5jx8W
+    [title] => I&#039;ve been doing it wrong this whole time, and maybe you have too
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 9391
+    [downVoteCount] => 147
+    [creationTs] => 1565354706
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460sv.mp4
+                    [hasAudio] => 1
+                    [duration] => 66
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ae5jx8W_460svwm.webm
+                    [hasAudio] => 1
+                    [duration] => 66
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 319
+    [postSection] => stdClass Object
+        (
+            [name] => Awesome
+            [url] => https://9gag.com/awesome
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557217995.2799_bYQyJU_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:24:38] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => ad50eOd
+    [url] => http://9gag.com/gag/ad50eOd
+    [title] => Wait For It...
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 4273
+    [downVoteCount] => 71
+    [creationTs] => 1565361434
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460sv.mp4
+                    [hasAudio] => 1
+                    [duration] => 32
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/ad50eOd_460svwm.webm
+                    [hasAudio] => 1
+                    [duration] => 32
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 96
+    [postSection] => stdClass Object
+        (
+            [name] => Awesome
+            [url] => https://9gag.com/awesome
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557217995.2799_bYQyJU_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:24:38] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => an5qEyz
+    [url] => http://9gag.com/gag/an5qEyz
+    [title] => OMG ...!! .... Someone&#039;s orange ball!!
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 6207
+    [downVoteCount] => 52
+    [creationTs] => 1565358315
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 257
+                    [url] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 257
+                    [url] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 256
+                    [url] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460sv.mp4
+                    [hasAudio] => 0
+                    [duration] => 0
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 256
+                    [url] => https://img-9gag-fun.9cache.com/photo/an5qEyz_460svwm.webm
+                    [hasAudio] => 0
+                    [duration] => 0
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 115
+    [postSection] => stdClass Object
+        (
+            [name] => GIF
+            [url] => https://9gag.com/gif
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557283958.4323_AXE2aJ_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [key] => Leopard
+                    [url] => /tag/leopard
+                )
+
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:24:38] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => a0R81bL
+    [url] => http://9gag.com/gag/a0R81bL
+    [title] => THE Definition of Hangry
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 3384
+    [downVoteCount] => 146
+    [creationTs] => 1565358499
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460sv.mp4
+                    [hasAudio] => 0
+                    [duration] => 0
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a0R81bL_460svwm.webm
+                    [hasAudio] => 0
+                    [duration] => 0
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 172
+    [postSection] => stdClass Object
+        (
+            [name] => GIF
+            [url] => https://9gag.com/gif
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557283958.4323_AXE2aJ_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [key] => Chihuahua
+                    [url] => /tag/chihuahua
+                )
+
+            [1] => stdClass Object
+                (
+                    [key] => Chinese Imperial Dog
+                    [url] => /tag/chinese-imperial-dog
+                )
+
+            [2] => stdClass Object
+                (
+                    [key] => Tibetan spaniel
+                    [url] => /tag/tibetan-spaniel
+                )
+
+            [3] => stdClass Object
+                (
+                    [key] => Puppy
+                    [url] => /tag/puppy
+                )
+
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:24:38] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => a7wL9Qb
+    [url] => http://9gag.com/gag/a7wL9Qb
+    [title] => Wtf is happening
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 7009
+    [downVoteCount] => 289
+    [creationTs] => 1565355132
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460sv.mp4
+                    [hasAudio] => 0
+                    [duration] => 0
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a7wL9Qb_460svwm.webm
+                    [hasAudio] => 0
+                    [duration] => 0
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 177
+    [postSection] => stdClass Object
+        (
+            [name] => GIF
+            [url] => https://9gag.com/gif
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557283958.4323_AXE2aJ_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [key] => Rob Dougan
+                    [url] => /tag/rob-dougan
+                )
+
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:24:39] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => a1Rv2gR
+    [url] => http://9gag.com/gag/a1Rv2gR
+    [title] => I&rsquo;ve watched this 17 times now
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 2872
+    [downVoteCount] => 189
+    [creationTs] => 1565364742
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460sv.mp4
+                    [hasAudio] => 0
+                    [duration] => 0
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/a1Rv2gR_460svwm.webm
+                    [hasAudio] => 0
+                    [duration] => 0
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 76
+    [postSection] => stdClass Object
+        (
+            [name] => WTF
+            [url] => https://9gag.com/wtf
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557310702.1267_UgysAp_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:24:39] local.ERROR: Failed to add an item. stdClass Object
+(
+    [id] => awo04NB
+    [url] => http://9gag.com/gag/awo04NB
+    [title] => Who needs CGI when you&#039;re a literal badass
+    [type] => Animated
+    [nsfw] => 0
+    [upVoteCount] => 1494
+    [downVoteCount] => 171
+    [creationTs] => 1565366774
+    [promoted] => 0
+    [isVoteMasked] => 0
+    [hasLongPostCover] => 0
+    [images] => stdClass Object
+        (
+            [image700] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/awo04NB_460s.jpg
+                )
+
+            [image460] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/awo04NB_460s.jpg
+                    [webpUrl] => https://img-9gag-fun.9cache.com/photo/awo04NB_460swp.webp
+                )
+
+            [image460sv] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/awo04NB_460sv.mp4
+                    [hasAudio] => 0
+                    [duration] => 0
+                    [h265Url] => https://img-9gag-fun.9cache.com/photo/awo04NB_460svh265.mp4
+                    [vp9Url] => https://img-9gag-fun.9cache.com/photo/awo04NB_460svvp9.webm
+                )
+
+            [image460svwm] => stdClass Object
+                (
+                    [width] => 460
+                    [height] => 258
+                    [url] => https://img-9gag-fun.9cache.com/photo/awo04NB_460svwm.webm
+                    [hasAudio] => 0
+                    [duration] => 0
+                )
+
+        )
+
+    [sourceDomain] => 
+    [sourceUrl] => 
+    [commentsCount] => 118
+    [postSection] => stdClass Object
+        (
+            [name] => GIF
+            [url] => https://9gag.com/gif
+            [imageUrl] => https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557283958.4323_AXE2aJ_100x100.jpg
+        )
+
+    [tags] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [key] => Arya Stark
+                    [url] => /tag/arya-stark
+                )
+
+            [1] => stdClass Object
+                (
+                    [key] => Brienne of Tarth
+                    [url] => /tag/brienne-of-tarth
+                )
+
+        )
+
+    [descriptionHtml] => 
+    [src_alias] => ninegag
+)
+. Call to a member function getKey() on null. File C:\OSPanel\domains\gator\trunk\app\Services\CrudService.php line 30  
+[2019-08-09 21:24:39] local.NOTICE: Cron 'cron-add' unsuccessfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 21:25:01] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 21:25:01] local.NOTICE: Cron 'cron-add' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 21:25:38] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 21:25:38] local.NOTICE: Cron 'cron-add' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 21:28:22] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 21:28:23] local.NOTICE: Cron 'cron-add' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 21:28:25] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 21:28:26] local.NOTICE: Cron 'cron-add' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 21:28:48] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 21:28:49] local.NOTICE: Cron 'cron-add' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 21:29:41] local.NOTICE: Cron 'cron-select' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 21:29:41] local.NOTICE: Cron 'cron-select' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 23:43:51] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 23:43:52] local.NOTICE: Cron 'cron-add' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 23:45:35] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 23:45:36] local.NOTICE: Cron 'cron-add' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 23:50:47] local.NOTICE: Cron 'cron-delete' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 23:50:47] local.NOTICE: Cron 'cron-delete' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 23:51:22] local.NOTICE: Cron 'cron-delete' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 23:51:22] local.ERROR: Call to undefined method App\Services\Meme\Cron::whetherToDelete() {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to undefined method App\\Services\\Meme\\Cron::whetherToDelete() at C:\\OSPanel\\domains\\gator\\trunk\\app\\Services\\Meme\\Cron.php:41)
+[stacktrace]
+#0 C:\\OSPanel\\domains\\gator\\trunk\\app\\Http\\Controllers\\Meme\\Cron.php(18): App\\Services\\Meme\\Cron->delete()
+#1 [internal function]: App\\Http\\Controllers\\Meme\\Cron->delete()
+#2 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#3 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('delete', Array)
+#4 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Meme\\Cron), 'delete')
+#5 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
+#6 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
+#7 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#28 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#29 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#30 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#31 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#32 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 C:\\OSPanel\\domains\\gator\\trunk\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 {main}
+"} 
+[2019-08-09 23:51:22] local.NOTICE: Cron 'cron-delete' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 23:57:05] local.NOTICE: Cron 'cron-delete' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 23:57:05] local.ERROR: Argument 1 passed to App\Services\Meme\Cron::getSrcService() must be of the type string, null given, called in C:\OSPanel\domains\gator\trunk\app\Services\Meme\Cron.php on line 39 {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Argument 1 passed to App\\Services\\Meme\\Cron::getSrcService() must be of the type string, null given, called in C:\\OSPanel\\domains\\gator\\trunk\\app\\Services\\Meme\\Cron.php on line 39 at C:\\OSPanel\\domains\\gator\\trunk\\app\\Services\\Meme\\Cron.php:57)
+[stacktrace]
+#0 C:\\OSPanel\\domains\\gator\\trunk\\app\\Services\\Meme\\Cron.php(39): App\\Services\\Meme\\Cron->getSrcService(NULL)
+#1 C:\\OSPanel\\domains\\gator\\trunk\\app\\Http\\Controllers\\Meme\\Cron.php(18): App\\Services\\Meme\\Cron->delete()
+#2 [internal function]: App\\Http\\Controllers\\Meme\\Cron->delete()
+#3 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#4 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('delete', Array)
+#5 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Meme\\Cron), 'delete')
+#6 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
+#7 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
+#8 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#29 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#30 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#31 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#32 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#33 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#48 C:\\OSPanel\\domains\\gator\\trunk\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#49 C:\\OSPanel\\domains\\gator\\trunk\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#50 {main}
+"} 
+[2019-08-09 23:57:05] local.NOTICE: Cron 'cron-delete' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-09 23:57:33] local.NOTICE: Cron 'cron-delete' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-09 23:57:33] local.NOTICE: Cron 'cron-delete' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  

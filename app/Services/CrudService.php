@@ -23,11 +23,12 @@ class CrudService extends Service
 
     public function prepareDataForStore(array $data): array
     {
+        $user = request()->user();
         return
             array_merge(
                 $data,
                 [
-                    'user_id' => request()->user()->getKey()
+                    'user_id' => $user ? $user->getKey() : 0
                 ]
             );
     }

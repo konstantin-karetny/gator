@@ -11,17 +11,6 @@ use Throwable;
 
 class NineGag extends MemeSrcsSrc
 {
-    public function filter(MemeMemeModel $model): bool
-    {
-        return
-            parent::filter($model) &&
-            (
-                $model->up_votes_count - $model->down_votes_count
-                >
-                $this->getModel()->filter_min_votes
-            );
-    }
-
     public function format($item): MemeMemeModel
     {
         $model                   = new MemeMemeModel();
@@ -146,5 +135,16 @@ class NineGag extends MemeSrcsSrc
         }
         while (count($items) < $quantity);
         return $this->formatRequestItems($items, $quantity);
+    }
+
+    public function whetherToAdd(MemeMemeModel $model): bool
+    {
+        return
+            parent::whetherToAdd($model) &&
+            (
+                $model->up_votes_count - $model->down_votes_count
+                >
+                $this->getModel()->filter_min_votes
+            );
     }
 }

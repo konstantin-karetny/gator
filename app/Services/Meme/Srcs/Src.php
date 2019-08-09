@@ -16,13 +16,9 @@ abstract class Src
         $this->model = MemeSrcModel::where('alias', ClassMap::getAlias($this))->first();
     }
 
-    public function filter(MemeMemeModel $model): bool
+    public function delete(MemeMemeModel $model): bool
     {
-        return
-            !MemeMemeModel::all()
-                ->where('src_id', $model->src_id)
-                ->where('original_id', $model->original_id)
-                ->count();
+        return (new MemeMemeService())->delete($model);
     }
 
     public function format($item): MemeMemeModel
@@ -44,6 +40,12 @@ abstract class Src
         return $this->model;
     }
 
+    public function makePermanent(MemeMemeModel $model): bool
+    {
+        $model->permanent = true;
+        return (bool) $model->save();
+    }
+
     public function requestItems(int $quantity): array
     {
         return [];
@@ -52,5 +54,19 @@ abstract class Src
     public function store(MemeMemeModel $model): MemeMemeModel
     {
         return (new MemeMemeService())->store($model->getAttributes());
+    }
+
+    public function whetherToAdd(MemeMemeModel $model): bool
+    {
+        return
+            !MemeMemeModel::all()
+                ->where('src_id', $model->src_id)
+                ->where('original_id', $model->original_id)
+                ->count();
+    }
+
+    public function whetherToDelete(MemeMemeModel $model): bool
+    {
+        return !$model->likes->count();
     }
 }

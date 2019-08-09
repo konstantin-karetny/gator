@@ -29,8 +29,8 @@ class Meme extends CrudController
             view(
                 ClassMap::getViewName($this) . '.indexfront',
                 [
-                    'i'     => (request()->input('page', 1) - 1) * 5,
-                    'items' => ClassMap::getModelName($this)::latest()->paginate(5),
+                    'i'     => (request()->input('page', 1) - 1) * 20,
+                    'items' => ClassMap::getModelName($this)::latest()->paginate(20),
                     'srcs'  => MemeSrcModel::all(['id', 'favicon'])->keyBy('id'),
                     'types' => MemeTypeModel::all(['id', 'alias'])->keyBy('id')
                 ]

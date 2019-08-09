@@ -1,0 +1,18 @@
+[2019-08-10 00:00:20] local.NOTICE: Cron 'cron-delete' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-10 00:00:20] local.NOTICE: Cron 'cron-delete' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-10 00:00:34] local.NOTICE: Cron 'cron-delete' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-10 00:00:34] local.NOTICE: Cron 'cron-delete' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-10 00:00:56] local.NOTICE: Cron 'cron-delete' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-10 00:00:56] local.NOTICE: Cron 'cron-delete' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-10 00:02:22] local.NOTICE: Cron 'cron-delete' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-10 00:02:22] local.NOTICE: Cron 'cron-delete' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-10 00:03:12] local.NOTICE: Cron 'cron-delete' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-10 00:03:12] local.NOTICE: Cron 'cron-delete' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-10 00:03:35] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-10 00:03:36] local.NOTICE: Cron 'cron-add' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-10 00:12:51] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-10 00:12:52] local.NOTICE: Cron 'cron-add' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-10 00:18:45] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-10 00:18:46] local.NOTICE: Cron 'cron-add' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  
+[2019-08-10 00:32:55] local.NOTICE: Cron 'cron-add' start. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 17  
+[2019-08-10 00:32:56] local.NOTICE: Cron 'cron-add' successfully complete. File C:\OSPanel\domains\gator\trunk\app\Http\Controllers\CronController.php line 27  

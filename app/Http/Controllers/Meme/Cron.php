@@ -13,13 +13,8 @@ class Cron extends CronController
         $this->success = $service->add($service->requestItems());
     }
 
-    public function select()
+    public function delete()
     {
-
-
-        die(var_dump(\App\Models\Meme\Meme::find(1)->getVideoPath()));
-
-
-        $this->success = (new MemeCronService())->select();
+        $this->success = (new MemeCronService())->delete();
     }
 }
