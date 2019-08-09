@@ -3,7 +3,7 @@
 return [
 
     'meme' => [
-        'lifetime' => 3 * 24 * 60 * 60,
+        'lifetime' => 5 * 24 * 60 * 60,
         'src'      => [
             'default_request_items_quantity' => 10
         ]

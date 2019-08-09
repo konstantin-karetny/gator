@@ -5,15 +5,18 @@ namespace App\Services\Meme;
 use App\Lib\Log;
 use App\Models\Meme\Meme as MemeMemeModel;
 use App\Models\Meme\Src as MemeSrcModel;
-use App\Services\CronService;
+use App\Services\Meme\Meme as MemeMemeService;
 use App\Services\Meme\Srcs\Src as MemeSrcsSrcService;
+use App\Services\Service;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Collection;
 use Throwable;
 
-class Cron extends CronService
+class Cron extends Service
 {
     public function add(array $items): bool
     {
+        $res = [];
         foreach ($items as $item) {
             try {
                 $service = $this->getSrcService($item->src_alias);
@@ -22,14 +25,24 @@ class Cron extends CronService
                     $service->store($model);
                 }
             } catch (Throwable $e) {
-                Log::fileLine(
-                    'Failed to add an item. ' .
-                    $e->getMessage() . '. ' .
-                    print_r($item, true)
-                );
+                Log::fileLineE($e, 'Failed to add an item. ' . print_r($item, true));
+                $res[] = false;
             }
         }
-        return true;
+        return !in_array(false, $res);
+    }
+
+    public function filter(MemeMemeModel $model): bool
+    {
+        return (bool) $model->likes->count();
+    }
+
+    public function getOldMemes(): Collection
+    {
+        return
+            MemeMemeModel::all()
+                ->where('created_at', '<', Carbon::now()->subSeconds(config('app.meme.lifetime')))
+                ->where('added', '=', 0);
     }
 
     public function getSrcService(string $alias): MemeSrcsSrcService
@@ -53,11 +66,21 @@ class Cron extends CronService
 
     public function select(): bool
     {
-        $models = MemeMemeModel::all()
-            ->where('created_at', '<', Carbon::now()->subSeconds(config('app.meme.lifetime')))
-            ->where('added', '=', 0);
-        foreach ($models as $model) {
-            
+        $res    = [];
+        $serice = new MemeMemeService();
+        foreach ($this->getOldMemes() as $model) {
+            if ($this->filter($model)) {
+                try {
+                    $serice->makePermanent($model);
+                } catch (Throwable $e) {
+                    Log::fileLineE($e, 'Failed to make a meme permanent. ' . print_r($model->getAttributes(), true));
+                    $res[] = false;
+                }
+            }
+            else {
+                $model->delete();
+            }
         }
+        return !in_array(false, $res);
     }
 }

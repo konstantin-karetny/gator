@@ -9,12 +9,17 @@ class Cron extends CronController
 {
     public function add()
     {
-        $service = new MemeCronService();
-        $service->add($service->requestItems());
+        $service       = new MemeCronService();
+        $this->success = $service->add($service->requestItems());
     }
 
     public function select()
     {
-        (new MemeCronService())->select();
+
+
+        die(var_dump(\App\Models\Meme\Meme::find(1)->getVideoPath()));
+
+
+        $this->success = (new MemeCronService())->select();
     }
 }

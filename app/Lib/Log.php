@@ -3,6 +3,7 @@
 namespace App\Lib;
 
 use Illuminate\Support\Facades\Log as LogFacade;
+use Throwable;
 
 class Log extends LogFacade
 {
@@ -13,7 +14,24 @@ class Log extends LogFacade
     ): void
     {
         $backtrace = reset(debug_backtrace());
-        $message  .= '. File ' . $backtrace['file'] . ' line ' . $backtrace['line'];
-        static::log($level, $message, $context);
+        static::log(
+            $level,
+            $message . '. File ' . $backtrace['file'] . ' line ' . $backtrace['line'],
+            $context
+        );
+    }
+
+    public static function fileLineE(
+        Throwable $e,
+        string    $message = '',
+        string    $level   = 'error',
+        array     $context = []
+    ): void
+    {
+        static::log(
+            $level,
+            $message . '. ' . $e->getMessage() . '. File ' . $e->getFile() . ' line ' . $e->getLine(),
+            $context
+        );
     }
 }

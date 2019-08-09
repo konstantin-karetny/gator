@@ -31,7 +31,7 @@ class NineGag extends MemeSrcsSrc
         $model->type_id          = $model->type->id;
         $model->body             = $this->getBody($model);
         $model->name             = $this->getName($model);
-        $model->poster           = $this->getPoster($model);
+        $model->preview          = $this->getPreview($model);
         $model->comments_count   = (int)    $item->commentsCount;
         $model->created_at       = (int)    $item->creationTs;
         $model->down_votes_count = (int)    $item->downVoteCount;
@@ -63,7 +63,7 @@ class NineGag extends MemeSrcsSrc
             );
     }
 
-    public function getPoster(MemeMemeModel $model): string
+    public function getPreview(MemeMemeModel $model): string
     {
         return
             $model->type->alias != 'video'

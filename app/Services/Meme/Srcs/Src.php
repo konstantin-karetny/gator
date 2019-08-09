@@ -9,8 +9,7 @@ use App\Services\Meme\Meme as MemeMemeService;
 
 abstract class Src
 {
-    protected
-        $model = null;
+    protected $model = null;
 
     public function __construct()
     {
@@ -19,12 +18,11 @@ abstract class Src
 
     public function filter(MemeMemeModel $model): bool
     {
-        return !(
-            MemeMemeModel::all()
+        return
+            !MemeMemeModel::all()
                 ->where('src_id', $model->src_id)
                 ->where('original_id', $model->original_id)
-                ->count()
-        );
+                ->count();
     }
 
     public function format($item): MemeMemeModel

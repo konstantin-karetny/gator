@@ -16,7 +16,9 @@ class CrudController extends Controller
 
     public function destroy(int $id)
     {
-        ClassMap::getModelName($this)::findOrNew($id)->delete();
+        ClassMap::getService($this)->delete(
+            ClassMap::getModelName($this)::findOrNew($id)
+        );
         return
             redirect()
                 ->route($this->getRouterAlias() . '.index')
