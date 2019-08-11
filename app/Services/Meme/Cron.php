@@ -48,9 +48,10 @@ class Cron extends Service
     public function getOldMemes(): Collection
     {
         return
-            MemeMemeModel::all()
-                ->where('created_at', '<', Carbon::now()->subSeconds(config('app.meme.lifetime')))
-                ->where('permanent', '=', 0);
+            MemeMemeModel
+                ::where('created_at', '<', Carbon::now()->subSeconds(config('app.meme.lifetime')))
+                ->where('permanent', 0)
+                ->get();
     }
 
     public function getSrcService(string $alias): MemeSrcsSrcService

@@ -74,12 +74,11 @@ class NineGag extends MemeSrcsSrc
                 $alias = 'image';
                 break;
         }
-        foreach (MemeTypeModel::all(['id', 'alias']) as $type) {
-            if ($type->alias == $alias) {
-                return $type;
-            }
+        $type = MemeTypeModel::where('alias', $alias)->first();
+        if (!$type) {
+            throw new Exception('Failed to get type');
         }
-        throw new Exception('Failed to get type');
+        return $type;
     }
 
     public function requestItems(int $quantity): array

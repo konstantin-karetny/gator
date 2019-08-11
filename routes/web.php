@@ -15,5 +15,7 @@ Auth::routes();
 Route::get('/', 'Meme\Meme@indexFront');
 Route::get('cron-add', 'Meme\Cron@add');
 Route::get('cron-delete', 'Meme\Cron@delete');
+Route::post('dislike', 'Meme\Meme@dislike')->middleware('auth');
+Route::post('like', 'Meme\Meme@like')->middleware('auth');
 Route::resource('meme', 'Meme\Meme')->middleware('auth');
 Route::resource('src', 'Meme\Src')->middleware('auth');

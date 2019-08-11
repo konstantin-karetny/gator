@@ -47,8 +47,8 @@ class CrudController extends Controller
             view(
                 ClassMap::getViewName($this) . '.index',
                 [
-                    'i'     => (request()->input('page', 1) - 1) * 5,
-                    'items' => ClassMap::getModelName($this)::latest()->paginate(5)
+                    'i'     => (request()->input('page', 1) - 1) * config('app.items_per_page'),
+                    'items' => ClassMap::getModelName($this)::latest()->paginate(config('app.items_per_page'))
                 ]
             );
     }

@@ -21,7 +21,7 @@ class CronController extends Controller
     {
         $message = (
             'Cron \'' . request()->path() . '\' ' .
-            ($this->success ? '' : 'un') . 'successfully complete'
+            ($this->success ? '' : 'UN') . 'successfully complete'
         );
         echo $message;
         Log::fileLine($message, 'notice');

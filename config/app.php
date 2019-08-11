@@ -5,9 +5,11 @@ return [
     'meme' => [
         'lifetime' => 5 * 24 * 60 * 60,
         'src'      => [
-            'default_request_items_quantity' => 10
+            'default_request_items_quantity' => 10,
+            'logo_extension'                 => 'png'
         ]
     ],
+    'items_per_page' => 20,
 
     /*
     |--------------------------------------------------------------------------

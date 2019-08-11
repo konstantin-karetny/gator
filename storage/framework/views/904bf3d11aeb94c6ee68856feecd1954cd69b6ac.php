@@ -11,8 +11,10 @@
             <link href="<?php echo e(asset($css)); ?>" rel="stylesheet">
         <?php endif; ?>
         <meta charset="UTF-8">
+        <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="<?php echo e(asset('js/jquery-3.4.1.min.js')); ?>"></script>
+        <script src="<?php echo e(asset('js/bootstrap-popper.min.js')); ?>"></script>
         <script src="<?php echo e(asset('js/bootstrap.min.js')); ?>"></script>
         <script src="<?php echo e(asset('js/bootstrap-toggle.min.js')); ?>"></script>
         <script src="<?php echo e(asset('js/app.js')); ?>"></script>

@@ -16,7 +16,7 @@ class CreateMemesTable extends Migration
                 $table->string('original_id');
                 $table->integer('type_id');
                 $table->integer('user_id');
-                $table->string('name');
+                $table->string('name', 1000);
                 $table->string('body', 1000);
                 $table->string('description', 1000);
                 $table->string('preview');

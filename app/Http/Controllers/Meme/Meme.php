@@ -7,9 +7,21 @@ use App\Lib\ClassMap;
 use App\Models\Meme\Meme as MemeMemeModel;
 use App\Models\Meme\Src as MemeSrcModel;
 use App\Models\Meme\Type as MemeTypeModel;
+use App\Services\Meme\Meme as MemeMemeService;
+use Illuminate\Http\Request;
 
 class Meme extends CrudController
 {
+    public function dislike(Request $request)
+    {
+        return
+            response()->json(
+                (new MemeMemeService())->dislike(
+                    MemeMemeModel::findOrFail($request->json('id'))
+                )
+            );
+    }
+
     public function edit(int $id)
     {
         return
@@ -30,10 +42,18 @@ class Meme extends CrudController
                 ClassMap::getViewName($this) . '.indexfront',
                 [
                     'i'     => (request()->input('page', 1) - 1) * 20,
-                    'items' => ClassMap::getModelName($this)::latest()->paginate(20),
-                    'srcs'  => MemeSrcModel::all(['id', 'favicon'])->keyBy('id'),
-                    'types' => MemeTypeModel::all(['id', 'alias'])->keyBy('id')
+                    'items' => MemeMemeModel::latest()->paginate(20)
                 ]
+            );
+    }
+
+    public function like(Request $request)
+    {
+        return
+            response()->json(
+                (new MemeMemeService())->like(
+                    MemeMemeModel::findOrFail($request->json('id'))
+                )
             );
     }
 }

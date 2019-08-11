@@ -5,12 +5,12 @@
 
 .meme.meme.indexfront .items .item {
     margin: 0 25px 50px 25px;
-    padding: 25px 45px;
+    padding: 30px 35px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 }
 
-.meme.meme.indexfront .items .item > * {
-    margin-bottom: 10px;
+.meme.meme.indexfront .items .item:hover {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .meme.meme.indexfront .items .item header {
@@ -30,17 +30,51 @@
     width: 100%;
 }
 
-.meme.meme.indexfront .items .item .src {
-    font-size: 0.75rem;
+.meme.meme.indexfront .items .item footer {
+    margin-top: 20px;
+    color: #555555;
 }
 
-.meme.meme.indexfront .items .item .src a > * {
+.meme.meme.indexfront .items .item footer .src a > *,
+.meme.meme.indexfront .items .item footer .text-right > *,
+.meme.meme.indexfront .items .item footer .like > * {
     display: inline-block;
     vertical-align: middle;
 }
 
-.meme.meme.indexfront .items .item .src img {
-    max-width: 1rem;
-    max-height: 1rem;
-    margin-right: 5px;
+.meme.meme.indexfront .items .item footer .src {
+    font-size: 0.75rem;
+}
+
+.meme.meme.indexfront .items .item footer .src a {
+    text-decoration: none;
+}
+
+.meme.meme.indexfront .items .item footer .src a:hover span {
+    text-decoration: underline;
+}
+
+.meme.meme.indexfront .items .item footer .src .external-link:after {
+    margin: 0;
+    font-size: 0.5rem;
+}
+
+.meme.meme.indexfront .items .item footer .src img {
+    max-height: 1.5rem;
+    margin-right: 0.25rem;
+}
+
+.meme.meme.indexfront .items .item footer .text-right > * {
+    margin-left: 1rem;
+}
+
+.meme.meme.indexfront .items .item footer .like .count {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.meme.meme.indexfront .items .item footer .btn-like:hover,
+.meme.meme.indexfront .items .item footer .btn-share:hover,
+.meme.meme.indexfront .items .item footer .btn-menu:hover {
+    color: black;
+    cursor: pointer;
 }

@@ -12,30 +12,32 @@
         <table>
             <tr>
                 <th>#</th>
-                <th>@lang('app.favicon')</th>
+                <th>@lang('app.logo')</th>
                 <th>@lang('app.name')</th>
                 <th>@lang('app.alias')</th>
                 <th>@lang('app.url')</th>
+                <th>@lang('app.edit')</th>
                 <th>@lang('app.delete')</th>
             </tr>
             @foreach ($items as $item)
                 <tr>
                     <td>{{ ++$i }}</td>
-                    <td class="favicon">
-                        <img src="{{ $item->favicon }}">
+                    <td class="logo">
+                        <img src="{{ $item->logo_url }}">
                     </td>
-                    <td>
-                        <a href="{{ route('src.edit', $item->id) }}" title="@lang('app.edit')">{{ $item->name }}</a>
-                    </td>
+                    <td>{{ $item->name }}</td>
                     <td>{{ $item->alias }}</td>
                     <td>
                         <a class="external_link" href="{{ $item->url }}" target="_blank">{{ $item->url }}</a>
                     </td>
                     <td>
+                        <a class="fas fa-lg fa-edit" href="{{ route('src.edit', $item->id) }}" title="@lang('app.edit')"></a>
+                    </td>
+                    <td>
                         <form action="{{ route('src.destroy', $item->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="fas fa-trash-alt text-danger btn-delete" onclick="return confirm('@lang('app.sure')');" title="@lang('app.delete')"></button>
+                            <button type="submit" class="fas fa-lg fa-trash-alt text-danger btn-delete" onclick="return confirm('@lang('app.sure')');" title="@lang('app.delete')"></button>
                         </form>
                     </td>
                 </tr>

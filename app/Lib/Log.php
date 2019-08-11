@@ -2,7 +2,9 @@
 
 namespace App\Lib;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log as LogFacade;
+use Illuminate\Validation\ValidationException;
 use Throwable;
 
 class Log extends LogFacade
@@ -28,9 +30,18 @@ class Log extends LogFacade
         array     $context = []
     ): void
     {
+        $details = '';
+        if ($e instanceof ValidationException) {
+            $details = trim(implode(', ', Arr::dot($e->errors())), '.');
+        }
         static::log(
             $level,
-            $message . '. ' . $e->getMessage() . '. File ' . $e->getFile() . ' line ' . $e->getLine(),
+            (
+                (!$message ? '' : $message . '. ') .
+                trim($e->getMessage(), '.') . '. ' .
+                (!$details ? '' : $details . '. ') .
+                'File ' . $e->getFile() . ' line ' . $e->getLine()
+            ),
             $context
         );
     }

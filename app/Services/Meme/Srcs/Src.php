@@ -59,14 +59,14 @@ abstract class Src
     public function whetherToAdd(MemeMemeModel $model): bool
     {
         return
-            !MemeMemeModel::all()
-                ->where('src_id', $model->src_id)
-                ->where('original_id', $model->original_id)
-                ->count();
+            MemeMemeModel::where([
+                'src_id'      => $model->src_id,
+                'original_id' => $model->original_id
+            ])->doesntExist();
     }
 
     public function whetherToDelete(MemeMemeModel $model): bool
     {
-        return !$model->likes->count();
+        return $model->likes->isEmpty();
     }
 }

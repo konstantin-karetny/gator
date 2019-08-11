@@ -10,3 +10,62 @@ $(window).scroll(() => {
             : el.play();
     });
 });
+
+class IndexFront
+{
+    static dislike(id)
+    {
+        fetch(
+            window.location.origin + '/dislike',
+            {
+                body : JSON.stringify({
+                    id : id
+                }),
+                headers : {
+                    'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
+                },
+                method : 'POST'
+            }
+        )
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+                alert('An error has occurred');
+            })
+            .then(res => {
+                alert('Succesfully disliked');
+            })
+            .catch(error => {
+                alert('An error has occurred: ' + error);
+            });
+    }
+
+    static like(id)
+    {
+        fetch(
+            window.location.origin + '/like',
+            {
+                body : JSON.stringify({
+                    id : id
+                }),
+                headers : {
+                    'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
+                },
+                method : 'POST'
+            }
+        )
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+                alert('An error has occurred');
+            })
+            .then(res => {
+                alert('Succesfully liked');
+            })
+            .catch(error => {
+                alert('An error has occurred: ' + error);
+            });
+    }
+}

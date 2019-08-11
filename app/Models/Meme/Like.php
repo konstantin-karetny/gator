@@ -8,7 +8,20 @@ use App\Models\User\User as UserUserModel;
 
 class Like extends Model
 {
-    protected $table = 'memes_likes';
+    public
+        $timestamps = false;
+
+    protected
+        $guarded    = [],
+        $table      = 'memes_likes';
+
+    public static function boot()
+    {
+        parent::boot();
+        static::creating(function ($model) {
+            $model->created_at = $model->freshTimestamp();
+        });
+    }
 
     public function meme()
     {
