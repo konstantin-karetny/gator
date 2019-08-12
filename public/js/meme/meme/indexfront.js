@@ -21,6 +21,7 @@ class IndexFront
                 body : JSON.stringify({
                     id : id
                 }),
+                credentials: 'same-origin',
                 headers : {
                     'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
                 },
@@ -43,12 +44,17 @@ class IndexFront
 
     static like(id)
     {
+        App.request('like', {id : id}, res => console.log(res));
+        return;
+
+
         fetch(
             window.location.origin + '/like',
             {
                 body : JSON.stringify({
                     id : id
                 }),
+                credentials: 'same-origin',
                 headers : {
                     'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
                 },
@@ -69,3 +75,5 @@ class IndexFront
             });
     }
 }
+
+IndexFront.like(1000);

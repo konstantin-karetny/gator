@@ -1,38 +1,42 @@
 <?php $__env->startSection('content'); ?>
     <div class="row items">
         <?php $__currentLoopData = $items; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-            <div class="item col-12">
-                <header>
-                    <h1>
-                        <?php echo e($item->name); ?>
-
-                    </h1>
+            <article class="item col-12<?php echo e($item->liked ? ' liked' : ''); ?>">
+                <!--header>
+                    <h1><?php echo e($item->name); ?></h1>
                 </header>
                 <div class="body">
-                    <?php if($types[$item->type_id]->alias == 'video'): ?>
-                        <video preload="auto" poster="<?php echo e($item->poster); ?>" controls loop muted>
+                    <?php if($item->type->alias == 'video'): ?>
+                        <video preload="auto" poster="<?php echo e($item->preview); ?>" controls loop muted>
                             <source src="<?php echo e($item->body); ?>" type="video/mp4">
                         </video>
                     <?php else: ?>
                         <img src="<?php echo e($item->body); ?>">
                     <?php endif; ?>
-                </div>
-                <?php if($item->tags): ?>
-                    <ul class="tags">
-                        <?php $__currentLoopData = $item->tags; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tag): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                            <li>
-                                <a href="/">#<?php echo e($tag['key']); ?></a>
-                            </li>
-                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                    </ul>
-                <?php endif; ?>
-                <div class="src">
-                    <a href="http://9gag.com/gag/<?php echo e($item->original_id); ?>" target="_blank">
-                        <img src="<?php echo e($srcs[$item->src_id]->favicon); ?>"><!--
-                     --><span>http://9gag.com/gag/<?php echo e($item->original_id); ?></span>
-                    </a>
-                </div>
-            </div>
+                </div-->
+                <footer class="row">
+                    <div class="col-6 text-left">
+                        <div class="src">
+                            <a href="<?php echo e($item->original_url); ?>" class="external-link" title="<?php echo app('translator')->getFromJson('app.src'); ?>" target="_blank">
+                                <img src="<?php echo e($item->src->logo_url); ?>">
+                                <span><?php echo e($item->src->name); ?></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 text-right">
+                        <div class="like">
+                            <div class="btn-like fa-lg fa-heart <?php echo e($item->liked ? 'fas' : 'far'); ?>" onclick="IndexFront.<?php echo e($item->liked ? 'dis' : ''); ?>like(<?php echo e($item->getKey()); ?>)" title="<?php echo app('translator')->getFromJson($item->liked ? 'app.dislike' : 'app.like'); ?>"></div>
+                            <div class="count"><?php echo e($item->likes()->count()); ?></div>
+                        </div>
+                        <div class="share">
+                            <div class="btn-share fas fa-lg fa-share-alt" title="<?php echo app('translator')->getFromJson('app.share'); ?>"></div>
+                        </div>
+                        <div class="menu">
+                            <div class="btn-menu fas fa-lg fa-ellipsis-h"></div>
+                        </div>
+                    </div>
+                </footer>
+            </article>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         <?php echo e($items->links()); ?>
 

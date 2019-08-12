@@ -13,57 +13,57 @@ class NineGag extends MemeSrcsSrc
 {
     public function format($item): MemeMemeModel
     {
-        $model                   = new MemeMemeModel();
-        $model->src_id           = $this->getModel()->id;
-        $model->raw              = $item;
-        $model->type             = $this->getType($model);
-        $model->type_id          = $model->type->id;
-        $model->body             = $this->getBody($model);
-        $model->name             = $this->getName($model);
-        $model->preview          = $this->getPreview($model);
-        $model->comments_count   = (int)    $item->commentsCount;
-        $model->created_at       = (int)    $item->creationTs;
-        $model->down_votes_count = (int)    $item->downVoteCount;
-        $model->up_votes_count   = (int)    $item->upVoteCount;
-        $model->original_id      = (string) $item->id;
-        return $model;
+        $meme                   = new MemeMemeModel();
+        $meme->src_id           = $this->getModel()->id;
+        $meme->raw              = $item;
+        $meme->type             = $this->getType($meme);
+        $meme->type_id          = $meme->type->id;
+        $meme->body             = $this->getBody($meme);
+        $meme->name             = $this->getName($meme);
+        $meme->preview          = $this->getPreview($meme);
+        $meme->comments_count   = (int)    $item->commentsCount;
+        $meme->created_at       = (int)    $item->creationTs;
+        $meme->down_votes_count = (int)    $item->downVoteCount;
+        $meme->up_votes_count   = (int)    $item->upVoteCount;
+        $meme->original_id      = (string) $item->id;
+        return $meme;
     }
 
-    public function getBody(MemeMemeModel $model): string
+    public function getBody(MemeMemeModel $meme): string
     {
-        switch ($model->type->alias) {
+        switch ($meme->type->alias) {
             case 'image':
-                return (string) $model->raw->images->image460->url;
+                return (string) $meme->raw->images->image460->url;
             case 'video':
-                return (string) $model->raw->images->image460sv->url;
+                return (string) $meme->raw->images->image460sv->url;
             default:
                 return '';
         };
     }
 
-    public function getName(MemeMemeModel $model): string
+    public function getName(MemeMemeModel $meme): string
     {
         return
             html_entity_decode(
                 htmlspecialchars_decode(
-                    trim($model->raw->title),
+                    trim($meme->raw->title),
                     ENT_QUOTES
                 )
             );
     }
 
-    public function getPreview(MemeMemeModel $model): string
+    public function getPreview(MemeMemeModel $meme): string
     {
         return
-            $model->type->alias != 'video'
+            $meme->type->alias != 'video'
                 ? ''
-                : (string) $model->raw->images->image700->url;
+                : (string) $meme->raw->images->image700->url;
     }
 
-    public function getType(MemeMemeModel $model): MemeTypeModel
+    public function getType(MemeMemeModel $meme): MemeTypeModel
     {
         $alias = '';
-        switch (strtolower(trim($model->raw->type))) {
+        switch (strtolower(trim($meme->raw->type))) {
             case 'animated':
                 $alias = 'video';
                 break;
@@ -136,12 +136,12 @@ class NineGag extends MemeSrcsSrc
         return $this->formatRequestItems($items, $quantity);
     }
 
-    public function whetherToAdd(MemeMemeModel $model): bool
+    public function whetherToAdd(MemeMemeModel $meme): bool
     {
         return
-            parent::whetherToAdd($model) &&
+            parent::whetherToAdd($meme) &&
             (
-                $model->up_votes_count - $model->down_votes_count
+                $meme->up_votes_count - $meme->down_votes_count
                 >
                 $this->getModel()->filter_min_votes
             );

@@ -11,14 +11,21 @@ class Src extends Model
 {
     protected $guarded = [];
 
+    public function getLogoFullPathAttribute()
+    {
+        return Storage::disk('public')->path($this->logo_path);
+    }
+
     public function getLogoPathAttribute()
     {
-        return Storage::disk('public')->path('srcs/' . $this->getKey() . '.' . config('app.meme.src.logo_extension'));
+        return
+            config('app.meme.src.dirs.logo') . '/' .
+            $this->getKey() . '.' . config('app.meme.src.logo_extension');
     }
 
     public function getLogoUrlAttribute()
     {
-        return asset('storage/srcs/' . $this->getKey() . '.' . config('app.meme.src.logo_extension'));
+        return asset('storage/' . $this->logo_path);
     }
 
     public function memes()

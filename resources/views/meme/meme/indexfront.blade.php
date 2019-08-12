@@ -3,7 +3,7 @@
     <div class="row items">
         @foreach ($items as $item)
             <article class="item col-12{{$item->liked ? ' liked' : '' }}">
-                <header>
+                <!--header>
                     <h1>{{ $item->name }}</h1>
                 </header>
                 <div class="body">
@@ -14,7 +14,7 @@
                     @else
                         <img src="{{ $item->body }}">
                     @endif
-                </div>
+                </div-->
                 <footer class="row">
                     <div class="col-6 text-left">
                         <div class="src">

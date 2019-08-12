@@ -19,9 +19,9 @@ class Cron extends Service
         foreach ($items as $item) {
             try {
                 $service = $this->getSrcService($item->src_alias);
-                $model   = $service->format($item);
-                if ($service->whetherToAdd($model)) {
-                    $service->store($model);
+                $meme    = $service->format($item);
+                if ($service->whetherToAdd($meme)) {
+                    $service->store($meme);
                 }
             } catch (Throwable $e) {
                 Log::fileLineE($e, 'Failed to add an item. ' . print_r($item, true));
@@ -34,12 +34,12 @@ class Cron extends Service
     public function delete(): bool
     {
         $res = [];
-        foreach ($this->getOldMemes() as $model) {
-            $service = $this->getSrcService($model->src->alias);
+        foreach ($this->getOldMemes() as $meme) {
+            $service = $this->getSrcService($meme->src->alias);
             $res[]   = (
-                $service->whetherToDelete($model)
-                    ? $service->delete($model)
-                    : $service->makePermanent($model)
+                $service->whetherToDelete($meme)
+                    ? $service->delete($meme)
+                    : $service->makePermanent($meme)
             );
         }
         return !in_array(false, $res);
@@ -63,11 +63,11 @@ class Cron extends Service
     public function requestItems(): array
     {
         $items = [];
-        foreach (MemeSrcModel::all(['alias', 'request_items_quantity']) as $model) {
-            $service = $this->getSrcService($model->alias);
+        foreach (MemeSrcModel::all(['alias', 'request_items_quantity']) as $src) {
+            $service = $this->getSrcService($src->alias);
             $items   = array_merge(
                 $items,
-                $service->requestItems($model->request_items_quantity)
+                $service->requestItems($src->request_items_quantity)
             );
         }
         return $items;

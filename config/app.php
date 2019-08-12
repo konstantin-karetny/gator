@@ -4,9 +4,13 @@ return [
 
     'meme' => [
         'lifetime' => 5 * 24 * 60 * 60,
-        'src'      => [
+        'src' => [
             'default_request_items_quantity' => 10,
-            'logo_extension'                 => 'png'
+            'dirs' => [
+                'root' => 'src',
+                'logo' => 'src/logo',
+            ],
+            'logo_extension' => 'png'
         ]
     ],
     'items_per_page' => 20,
