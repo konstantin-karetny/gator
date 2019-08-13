@@ -44,36 +44,12 @@ class IndexFront
 
     static like(id)
     {
-        App.request('like', {id : id}, res => console.log(res));
-        return;
-
-
-        fetch(
-            window.location.origin + '/like',
+        App.request(
+            'like',
             {
-                body : JSON.stringify({
-                    id : id
-                }),
-                credentials: 'same-origin',
-                headers : {
-                    'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
-                },
-                method : 'POST'
-            }
-        )
-            .then(response => {
-                if (response.ok) {
-                    return response.json();
-                }
-                alert('An error has occurred');
-            })
-            .then(res => {
-                alert('Succesfully liked');
-            })
-            .catch(error => {
-                alert('An error has occurred: ' + error);
-            });
+                id : id
+            },
+            res => alert('Liked')
+        );
     }
 }
-
-IndexFront.like(1000);

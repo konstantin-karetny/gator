@@ -1,0 +1,117 @@
+#header {
+    margin-bottom: 50px;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.01);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 250px;
+    margin: 0 auto;
+}
+
+#logo img {
+    max-width: 100%;
+}
+
+.msgs li {
+    display: block;
+}
+
+.btns > * {
+    vertical-align: middle;
+}
+
+.btns .btn:not(:last-child) {
+    margin-right: 5px;
+}
+
+.btn-delete:hover {
+    color: #C82333 !important;
+}
+
+.external-link:after {
+    content: '\f35d';
+    display: inline-block;
+    margin: 0 0.25rem;
+    position: relative;
+    transform: translateY(-0.05rem);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 0.7rem;
+}
+
+/* FONT AWESOME A */
+a[class*="fa-"]:hover {
+    text-decoration: none;
+}
+
+button[class*="fa-"] {
+    border: none;
+    background: none;
+}
+/* FONT AWESOME Z */
+
+/* FORM A */
+.form-group.required > label:after {
+    content: ' *';
+    color: #DC3545;
+}
+
+.form-group.file .form-control-file:only-child {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-group.file .col-form-input > * {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.form-group.file .col-form-input > img {
+    max-height: 2.5rem;
+    margin-right: 10px;
+}
+/* FORM Z */
+
+/* PAGINATION A */
+.pagination {
+    justify-content: center;
+    margin-top: 25px;
+}
+/* PAGINATION Z */
+
+/* TABLE A */
+table {
+    width: 100%;
+}
+
+table tr,
+table th,
+table td {
+    border: solid 1px #DDDDDD;
+}
+
+table tr:hover,
+table tr.active {
+    background: #F5F5F5;
+}
+
+table th,
+table td {
+    padding: 3px 7px;
+}
+
+table th {
+    padding: 7px;
+    background: #EEEEEE;
+    font-weight: bold;
+    color: #555555;
+}
+
+table td:empty:before {
+    content: '-';
+}
+/* TABLE Z */
