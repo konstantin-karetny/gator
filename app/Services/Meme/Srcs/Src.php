@@ -16,9 +16,9 @@ abstract class Src
         $this->model = MemeSrcModel::where('alias', ClassMap::getAlias($this))->first();
     }
 
-    public function delete(MemeMemeModel $meme): bool
+    public function delete(MemeMemeModel $model): bool
     {
-        return (new MemeMemeService())->delete($meme);
+        return (new MemeMemeService())->delete($model);
     }
 
     public function format($item): MemeMemeModel
@@ -40,10 +40,10 @@ abstract class Src
         return $this->model;
     }
 
-    public function makePermanent(MemeMemeModel $meme): bool
+    public function makePermanent(MemeMemeModel $model): bool
     {
-        $meme->permanent = true;
-        return (bool) $meme->save();
+        $model->permanent = true;
+        return (bool) $model->save();
     }
 
     public function requestItems(int $quantity): array
@@ -51,22 +51,22 @@ abstract class Src
         return [];
     }
 
-    public function store(MemeMemeModel $meme): MemeMemeModel
+    public function store(MemeMemeModel $model): MemeMemeModel
     {
-        return (new MemeMemeService())->store($meme->getAttributes());
+        return (new MemeMemeService())->store($model->getAttributes());
     }
 
-    public function whetherToAdd(MemeMemeModel $meme): bool
+    public function whetherToAdd(MemeMemeModel $model): bool
     {
         return
             MemeMemeModel::where([
-                'src_id'      => $meme->src_id,
-                'original_id' => $meme->original_id
+                'src_id'      => $model->src_id,
+                'original_id' => $model->original_id
             ])->doesntExist();
     }
 
-    public function whetherToDelete(MemeMemeModel $meme): bool
+    public function whetherToDelete(MemeMemeModel $model): bool
     {
-        return $meme->likes->isEmpty();
+        return $model->likes->isEmpty();
     }
 }

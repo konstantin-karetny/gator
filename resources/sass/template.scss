@@ -18,6 +18,14 @@
     display: block;
 }
 
+a img {
+    opacity: 0.9;
+}
+
+a:hover img {
+    opacity: 1;
+}
+
 .btns > * {
     vertical-align: middle;
 }

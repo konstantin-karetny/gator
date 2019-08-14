@@ -1,6 +1,11 @@
 
 // Fonts
-@import '~font-awesome/scss/font-awesome';
+// https://stackoverflow.com/questions/52433486/laravel-5-7-font-awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables

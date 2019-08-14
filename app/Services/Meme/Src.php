@@ -26,15 +26,14 @@ class Src extends CrudService
 
     public function store(array $data): Model
     {
-        $src = parent::store(Arr::except($data, 'logo'));
+        $model = parent::store(Arr::except($data, 'logo'));
         if ($data['logo']) {
-            $pathinfo = pathinfo($src->logo_path);
             $data['logo']->storeAs(
-                $pathinfo['dirname'],
-                $pathinfo['basename'],
+                'srcs',
+                $model->getKey() . '.' . config('app.meme.src.logo_extension'),
                 'public'
             );
         }
-        return $src;
+        return $model;
     }
 }
