@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Aug 11, 2019 at 05:02 PM
+-- Generation Time: Aug 16, 2019 at 06:02 PM
 -- Server version: 8.0.15
 -- PHP Version: 7.3.2
 
@@ -326,7 +326,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (27, '2019_05_14_114356_create_srcs_table', 1),
 (28, '2019_08_02_093405_create_memes_table', 2),
 (30, '2019_08_02_202205_create_types_table', 3),
-(32, '2019_08_09_103722_create_memes_likes_table', 4);
+(32, '2019_08_09_103722_create_memes_likes_table', 4),
+(33, '2019_08_16_150837_create_posts_table', 5);
 
 -- --------------------------------------------------------
 
@@ -343,6 +344,27 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `posts`
+--
+
+CREATE TABLE `posts` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `body` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `posts`
+--
+
+INSERT INTO `posts` (`id`, `title`, `body`, `created_at`, `updated_at`) VALUES
+(3, 'z', 'z', '2019-08-16 13:03:58', '2019-08-16 13:03:58');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `srcs`
 --
 
@@ -354,7 +376,7 @@ CREATE TABLE `srcs` (
   `url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `request_items_quantity` smallint(5) NOT NULL,
   `filter_min_votes` smallint(5) UNSIGNED NOT NULL,
-  `item_url_prefix` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `item_url_prefix` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -439,6 +461,12 @@ ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
+-- Indexes for table `posts`
+--
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `srcs`
 --
 ALTER TABLE `srcs`
@@ -472,7 +500,13 @@ ALTER TABLE `memes`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+
+--
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `srcs`
