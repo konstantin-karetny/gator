@@ -41,7 +41,7 @@ class PostController extends Controller
       return response()->json('successfully updated');
     }
 
-    public function delete($id)
+    public function destroy($id)
     {
       $post = Post::find($id);
 

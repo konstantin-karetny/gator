@@ -1834,7 +1834,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    var uri = "/api/post/edit/".concat(this.$route.params.id);
+    var uri = "/api/post/".concat(this.$route.params.id, "/edit");
     this.axios.get(uri).then(function (response) {
       _this.post = response.data;
     });
@@ -1843,8 +1843,8 @@ __webpack_require__.r(__webpack_exports__);
     updatePost: function updatePost() {
       var _this2 = this;
 
-      var uri = "/api/post/update/".concat(this.$route.params.id);
-      this.axios.post(uri, this.post).then(function (response) {
+      var uri = "/api/post/".concat(this.$route.params.id);
+      this.axios.put(uri, this.post).then(function (response) {
         _this2.$router.push({
           name: 'posts'
         });
@@ -1936,7 +1936,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    var uri = '/api/posts';
+    var uri = '/api/post';
     this.axios.get(uri).then(function (response) {
       _this.posts = response.data.data;
     });
@@ -1945,7 +1945,7 @@ __webpack_require__.r(__webpack_exports__);
     deletePost: function deletePost(id) {
       var _this2 = this;
 
-      var uri = "/api/post/delete/".concat(id);
+      var uri = "/api/post/".concat(id);
       this.axios["delete"](uri).then(function (response) {
         _this2.posts.splice(_this2.posts.indexOf(id), 1);
       });
@@ -53382,7 +53382,7 @@ var routes = [{
   component: _components_post_IndexComponent_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
 }, {
   name: 'edit',
-  path: '/edit/:id',
+  path: '/:id/edit',
   component: _components_post_EditComponent_vue__WEBPACK_IMPORTED_MODULE_7__["default"]
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
@@ -53834,8 +53834,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\OSPanel\domains\gator\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\OSPanel\domains\gator\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\OSPanel\domains\gator\trunk\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\OSPanel\domains\gator\trunk\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
